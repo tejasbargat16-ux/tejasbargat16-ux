@@ -1,18 +1,302 @@
-# 💫 About Me:
-👋 About Me<br><br>Hi, I'm Tejas Bargat — a Electronics and communication engineering student and aspiring as a computer science Engineering student, developer, builder, and technology enthusiast focused on turning ideas into practical products.<br><br>🚀 I enjoy building AI-powered applications, full-stack projects, backend systems, and engineering solutions while continuously exploring new technologies.<br><br>💡 I'm currently focused on strengthening my skills in Python, Java, AI/ML, backend development, APIs, databases, and modern web technologies.<br><br>🧠 I learn by building — from experimenting with AI integrations and multi-provider systems to developing real-world projects such as NEXUS Chat, an AI chatbot with multi-provider routing and persistent conversation history.<br><br>🔧 My approach is simple: learn → build → break → improve → ship.<br><br>📚 I'm continuously working on improving my problem-solving, software engineering, system design, and product-building skills.<br><br>🎯 My long-term goal is to become a strong software engineer and technology entrepreneur, building useful products that solve real problems.<br><br>«Build something useful. Keep learning. Keep improving.»
+<div align="center">
 
+# 👋 Hi, I'm Tejas Bargat
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/_tejas_bargat_01_) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/tejas-bargat-9ab8523b0) [![Mastodon](https://img.shields.io/badge/-MASTODON-%232B90D9?logo=mastodon&logoColor=white)](https://mastodon.social/@Tejas Bargat) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:tejasbargat16@gmail.com) 
+### Engineering Student • Developer • Electronics Enthusiast • Builder
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=plastic&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=plastic&logo=c%2B%2B&logoColor=white) ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=plastic&logo=go&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=plastic&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=plastic&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=plastic&logo=python&logoColor=ffdd54) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=plastic&logo=typescript&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=plastic&logo=amazon-aws&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=plastic&logo=microsoftazure&logoColor=white) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=plastic&logo=Cloudflare&logoColor=white) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=plastic&logo=google-cloud&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=plastic&logo=firebase) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=plastic&logo=vercel&logoColor=white) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=plastic&logo=.net&logoColor=white) ![Chart.js](https://img.shields.io/badge/chart.js-F5788D.svg?style=plastic&logo=chart.js&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=plastic&logo=django&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=plastic&logo=flask&logoColor=white) ![Filament](https://img.shields.io/badge/Filament-FFAA00?style=plastic&logoColor=%23000000) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=plastic&logo=node.js&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=plastic&logo=next.js&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=plastic&logo=npm&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=plastic&logo=react&logoColor=%2361DAFB) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=plastic&logo=tailwind-css&logoColor=white) ![Web3.js](https://img.shields.io/badge/web3.js-F16822?style=plastic&logo=web3.js&logoColor=white) ![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-017CEE?style=plastic&logo=Apache%20Airflow&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=plastic&logo=firebase&logoColor=ffcd34) ![Arango DB](https://img.shields.io/badge/ArangoDB-DDE072?style=plastic&logo=arangodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=plastic&logo=mysql&logoColor=white) ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=plastic&logo=microsoft%20sql%20server&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=plastic&logo=mongodb&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=plastic&logo=supabase&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=plastic&logo=sqlite&logoColor=white) ![Adobe Acrobat Reader](https://img.shields.io/badge/Adobe%20Acrobat%20Reader-EC1C24.svg?style=plastic&logo=Adobe%20Acrobat%20Reader&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=plastic&logo=Canva&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=plastic&logo=figma&logoColor=white) ![Framer](https://img.shields.io/badge/Framer-black?style=plastic&logo=framer&logoColor=blue) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=plastic&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=plastic&logo=numpy&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=plastic&logo=Matplotlib&logoColor=black) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=plastic&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=plastic&logo=github&logoColor=white) ![Testing-Library](https://img.shields.io/badge/-TestingLibrary-%23E33332?style=plastic&logo=testing-library&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=plastic&logo=docker&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=plastic&logo=notion&logoColor=white) ![Meta](https://img.shields.io/badge/Meta-%230467DF.svg?style=plastic&logo=Meta&logoColor=white) ![Power Bi](https://img.shields.io/badge/power_bi-F2C811?style=plastic&logo=powerbi&logoColor=black) ![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=plastic&logo=firefox&logoColor=#FF7139) ![Raspberry Pi](https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=plastic&logo=Raspberry-Pi) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=plastic&logo=Arduino&logoColor=white) ![TOR](https://img.shields.io/badge/tor-%237E4798.svg?style=plastic&logo=tor-project&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.shion.dev/api?username=tejasbargat16-ux&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://streak-stats.demolab.com/?user=tejasbargat16-ux&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=tejasbargat16-ux&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+<p>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=900&color=00D9FF&center=true&vCenter=true&width=700&height=45&lines=Building+my+skills+one+project+at+a+time;Learning+Python%2C+Java+%26+JavaScript;Exploring+AI%2C+Embedded+Systems+%26+Web+Development;Turning+ideas+into+working+projects+%F0%9F%9A%80" alt="Typing SVG" />
+</p>
+
+<p>
+  <a href="https://github.com/tejasbargat16-ux">
+    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="https://www.linkedin.com/in/tejas-bargat-9ab8523b0">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://instagram.com/_tejas_bargat_01_">
+    <img src="https://img.shields.io/badge/Instagram-Connect-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
+  </a>
+  <a href="mailto:tejasbargat16@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+</p>
+
+<img src="https://komarev.com/ghpvc/?username=tejasbargat16-ux&label=PROFILE%20VIEWS&color=0e75b6&style=for-the-badge" alt="Profile Views"/>
+
+</div>
 
 ---
-[![](https://komarev.com/ghpvc/?username=tejasbargat16-ux&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+## 🚀 About Me
+
+I'm **Tejas Bargat**, an engineering student building a strong foundation across **software development, electronics, embedded systems, AI tools, and problem solving**.
+
+I enjoy learning by building practical projects rather than only studying theory. My current journey combines:
+
+- 💻 Programming and software development
+- 🐍 Python and Java learning
+- 🌐 Web development fundamentals
+- 🤖 AI-assisted applications and APIs
+- 🔌 Electronics, Arduino and embedded systems
+- 🧠 Data structures, problem solving and engineering fundamentals
+- 🔧 Git, GitHub, Termux and developer workflows
+- 🚀 Entrepreneurship and product-building mindset
+
+> **My goal:** keep improving my engineering fundamentals, build real projects, and turn ideas into useful technology.
+
+---
+
+## 🛠️ Tech Stack & Skills
+
+### 💻 Programming
+
+<p>
+  <img src="https://skillicons.dev/icons?i=python,java,cpp,js,html,css&theme=dark" alt="Programming Languages"/>
+</p>
+
+### 🌐 Web & Software Development
+
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js&theme=dark" alt="Web Technologies"/>
+</p>
+
+**Currently learning / developing:** Java programming, Python development, JavaScript fundamentals, APIs and backend concepts.
+
+### 🔌 Electronics & Embedded Systems
+
+<p>
+  <img src="https://skillicons.dev/icons?i=arduino&theme=dark" alt="Arduino"/>
+</p>
+
+**Focus areas:**
+- Arduino-based systems
+- 8051 microcontroller projects
+- Sensors and digital circuits
+- Automatic control systems
+- Water-level monitoring
+- Solar tracking concepts
+- Basic embedded-system integration
+
+### 🤖 AI & APIs
+
+**Exploring:**
+- AI chatbot development
+- LLM APIs
+- API integration
+- Model/provider switching
+- Persistent chat history
+- AI-assisted development workflows
+
+### 🔧 Tools & Workflow
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,linux&theme=dark" alt="Tools"/>
+</p>
+
+- Git & GitHub
+- Termux
+- VS Code
+- Android/Pydroid-based development
+- Command-line workflows
+
+---
+
+## 🚀 Featured Projects
+
+### 🤖 NexusChat — Terminal AI Chatbot
+
+A terminal-based AI chatbot project developed around multiple AI providers.
+
+**Highlights:**
+- Multiple AI provider/API support
+- Provider and model switching
+- SQLite-based persistent chat history
+- Terminal-first workflow
+- Built and tested around a mobile/Termux development environment
+
+**Repository:**  
+`https://github.com/tejasbargat16-ux`
+
+---
+
+### 💧 Dual Water Tank Water-Level Monitoring System
+
+An electronics/Arduino project focused on monitoring water levels in two tanks.
+
+**Core concepts:**
+- Arduino UNO
+- Water-level sensing
+- Multiple level indicators
+- Buzzer alert logic
+- LED status indication
+- Automatic motor-control upgrade concept
+
+This project helped me work with **sensors, Arduino programming, digital logic, hardware wiring and automation**.
+
+---
+
+### ☀️ Solar Panel Tracking System — 8051
+
+An embedded-systems project concept using an **8051 microcontroller** to track the direction of maximum light exposure.
+
+**Learning areas:**
+- 8051 microcontroller
+- LDR-based sensing
+- Motor/control logic
+- Embedded programming
+- Solar-energy applications
+
+---
+
+### 🌙 Automatic Night Lamp
+
+A basic electronics automation project based on automatic light control.
+
+**Concepts:**
+- Light-dependent sensing
+- Automatic switching
+- Electronic control
+- Practical circuit implementation
+
+---
+
+## 📚 Learning Journey
+
+### 🐍 Python Learning Journey
+
+I maintain a day-by-day learning approach for Python fundamentals, practice problems and GitHub-based progress tracking.
+
+Focus areas include:
+
+```text
+Python Basics
+   ↓
+Problem Solving
+   ↓
+Functions & Data Structures
+   ↓
+File Handling
+   ↓
+OOP
+   ↓
+APIs / Automation
+   ↓
+Projects
+```
+
+### ☕ Java Learning Journey
+
+Currently building Java fundamentals through small programs and daily practice.
+
+```text
+Java Syntax
+   ↓
+Variables & Conditions
+   ↓
+Loops
+   ↓
+Methods
+   ↓
+Arrays & Strings
+   ↓
+OOP
+   ↓
+Problem Solving
+   ↓
+Projects
+```
+
+---
+
+## 🎓 Engineering + Career Direction
+
+My long-term development roadmap combines **engineering + software + electronics + AI + entrepreneurship**.
+
+```text
+Engineering Fundamentals
+        ↓
+Programming Fundamentals
+        ↓
+Software Development
+        ↓
+Electronics & Embedded Systems
+        ↓
+AI / APIs / Automation
+        ↓
+Real-World Projects
+        ↓
+Internships & Industry Experience
+        ↓
+Advanced Engineering + Entrepreneurship
+```
+
+I'm especially interested in building the intersection between **hardware and software**.
+
+---
+
+## 📈 GitHub Analytics
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=tejasbargat16-ux&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Tejas's GitHub Stats"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejasbargat16-ux&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages"/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=tejasbargat16-ux&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+
+</div>
+
+---
+
+## 🐍 Contribution Journey
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake"/>
+
+</div>
+
+---
+
+## 🎯 Current Focus
+
+```text
+[✓] Build GitHub presence
+[✓] Learn Git & GitHub workflow
+[✓] Build electronics projects
+[✓] Start structured Python learning
+[✓] Start structured Java learning
+[ ] Strengthen DSA & problem solving
+[ ] Build stronger full-stack projects
+[ ] Build practical AI applications
+[ ] Deepen embedded/electronics skills
+[ ] Prepare for internships and placements
+```
+
+---
+
+## 📫 Let's Connect
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/tejas-bargat-9ab8523b0">
+    <img src="https://img.shields.io/badge/LinkedIn-Tejas%20Bargat-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://instagram.com/_tejas_bargat_01_">
+    <img src="https://img.shields.io/badge/Instagram-@_tejas_bargat_01_-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
+  </a>
+  <a href="mailto:tejasbargat16@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-tejasbargat16%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+</p>
+
+---
+
+<div align="center">
+
+### ⚡ Build. Learn. Break. Fix. Repeat.
+
+**Learning today. Building tomorrow.**
+
+</div>
