@@ -117,7 +117,7 @@ A terminal-based AI chatbot project developed around multiple AI providers.
 - Built and tested around a mobile/Termux development environment
 
 **Repository:**  
-`https://github.com/tejasbargat16-ux`
+`https://github.com/tejasbargat16-ux/nexuschat.git`
 
 ---
 
