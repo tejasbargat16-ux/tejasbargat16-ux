@@ -236,15 +236,25 @@ I'm especially interested in building the intersection between **hardware and so
 
 ---
 
-## 📈 GitHub Analytics
+## 📊 GitHub Analytics
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=tejasbargat16-ux&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Tejas's GitHub Stats"/>
+<a href="https://github.com/tejasbargat16-ux">
+  <img
+    height="180"
+    src="https://github-readme-stats.vercel.app/api?username=tejasbargat16-ux&show_icons=true&theme=tokyonight&hide_border=true"
+    alt="Tejas's GitHub Stats"
+  />
+</a>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejasbargat16-ux&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages"/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=tejasbargat16-ux&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+<a href="https://github.com/tejasbargat16-ux">
+  <img
+    height="180"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejasbargat16-ux&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"
+    alt="Tejas's Top Languages"
+  />
+</a>
 
 </div>
 
