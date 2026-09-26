@@ -1,5 +1,15 @@
 <div align="center">
 
+<img
+  src="./assets/file_0000000045788211acd716cb0b7bf7e1.png"
+  alt="Tejas Bargat GitHub Profile Banner"
+  width="100%"
+/>
+
+</div>
+
+<br>
+
 # 👋 Hi, I'm Tejas Bargat
 
 ### Engineering Student • Developer • Electronics Enthusiast • Builder
