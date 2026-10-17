@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 512" width="1200" height="512" role="img" aria-label="About: 2nd-year B.Tech ECE with a minor in CSE at TGPCET; builder of Arduino, 8051 and Flask/LLM projects; preparing for GATE EC and internships; Android-first developer using Termux."><defs></defs><style>.d{font-family:Impact,"Bebas Neue","Arial Narrow",Haettenschweiler,sans-serif;letter-spacing:1px}.s{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+.in{animation:in 1s cubic-bezier(.16,1,.3,1) both}.d2{animation-delay:.2s}.d3{animation-delay:.45s}.d4{animation-delay:.7s}
+@keyframes in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes bar{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.bar{transform-box:fill-box;transform-origin:left center;animation:bar 2s cubic-bezier(.65,0,.35,1) .6s both}
+@media (prefers-reduced-motion:reduce){.in,.bar{animation:none}}</style><rect width="1200" height="512" rx="10" fill="#141414"/><g class="in" style="animation-delay:0.0s"><rect x="40" y="30" width="1120" height="104" rx="8" fill="#1F1F1F"/>
+<text class="d" x="76" y="92" font-size="42" fill="#B3B3B3" text-anchor="middle">1</text>
+<rect x="120" y="40" width="170" height="84" rx="5" fill="#2B2B2B"/><rect x="120" y="40" width="170" height="84" rx="5" fill="#E50914" fill-opacity="0.12"/><circle cx="205" cy="82" r="18" fill="none" stroke="#FFFFFF" stroke-width="2"/><path d="M200 73L216 82L200 91Z" fill="#FFFFFF"/>
+<rect x="120" y="118" width="40" height="6" fill="#E50914" class="bar"/>
+<text class="s" x="316" y="68" font-size="20" font-weight="700" fill="#FFFFFF">The Student</text><text class="s" x="1135" y="68" text-anchor="end" font-size="16" fill="#B3B3B3">47m</text>
+<text class="s" x="316" y="98" font-size="15" fill="#B3B3B3">2nd-year B.Tech ECE with a minor in CSE at TGPCET, RTMNU. Wardha, Maharashtra.</text></g><g class="in" style="animation-delay:0.2s"><rect x="40" y="148" width="1120" height="104" rx="8" fill="#1F1F1F"/>
+<text class="d" x="76" y="210" font-size="42" fill="#B3B3B3" text-anchor="middle">2</text>
+<rect x="120" y="158" width="170" height="84" rx="5" fill="#2B2B2B"/><rect x="120" y="158" width="170" height="84" rx="5" fill="#E50914" fill-opacity="0.20"/><circle cx="205" cy="200" r="18" fill="none" stroke="#FFFFFF" stroke-width="2"/><path d="M200 191L216 200L200 209Z" fill="#FFFFFF"/>
+<rect x="120" y="236" width="70" height="6" fill="#E50914" class="bar"/>
+<text class="s" x="316" y="186" font-size="20" font-weight="700" fill="#FFFFFF">The Builder</text><text class="s" x="1135" y="186" text-anchor="end" font-size="16" fill="#B3B3B3">52m</text>
+<text class="s" x="316" y="216" font-size="15" fill="#B3B3B3">Arduino, 8051, Flask and LLM APIs. Ships projects instead of only reading theory.</text></g><g class="in" style="animation-delay:0.4s"><rect x="40" y="266" width="1120" height="104" rx="8" fill="#1F1F1F"/>
+<text class="d" x="76" y="328" font-size="42" fill="#B3B3B3" text-anchor="middle">3</text>
+<rect x="120" y="276" width="170" height="84" rx="5" fill="#2B2B2B"/><rect x="120" y="276" width="170" height="84" rx="5" fill="#E50914" fill-opacity="0.28"/><circle cx="205" cy="318" r="18" fill="none" stroke="#FFFFFF" stroke-width="2"/><path d="M200 309L216 318L200 327Z" fill="#FFFFFF"/>
+<rect x="120" y="354" width="100" height="6" fill="#E50914" class="bar"/>
+<text class="s" x="316" y="304" font-size="20" font-weight="700" fill="#FFFFFF">The Aspirant</text><text class="s" x="1135" y="304" text-anchor="end" font-size="16" fill="#B3B3B3">44m</text>
+<text class="s" x="316" y="334" font-size="15" fill="#B3B3B3">Preparing for GATE EC while chasing internships in embedded, IoT, AI/ML and software.</text></g><g class="in" style="animation-delay:0.6s"><rect x="40" y="384" width="1120" height="104" rx="8" fill="#1F1F1F"/>
+<text class="d" x="76" y="446" font-size="42" fill="#B3B3B3" text-anchor="middle">4</text>
+<rect x="120" y="394" width="170" height="84" rx="5" fill="#2B2B2B"/><rect x="120" y="394" width="170" height="84" rx="5" fill="#E50914" fill-opacity="0.36"/><circle cx="205" cy="436" r="18" fill="none" stroke="#FFFFFF" stroke-width="2"/><path d="M200 427L216 436L200 445Z" fill="#FFFFFF"/>
+<rect x="120" y="472" width="130" height="6" fill="#E50914" class="bar"/>
+<text class="s" x="316" y="422" font-size="20" font-weight="700" fill="#FFFFFF">The Android-First Dev</text><text class="s" x="1135" y="422" text-anchor="end" font-size="16" fill="#B3B3B3">39m</text>
+<text class="s" x="316" y="452" font-size="15" fill="#B3B3B3">No laptop. Everything is written, tested and pushed from a phone with Termux.</text></g></svg>

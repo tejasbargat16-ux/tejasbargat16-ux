@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tejas Bargat — ECE Original | Netflix-Themed Portfolio</title>
+  <meta name="description" content="Official portfolio of Tejas Bargat: 2nd-year B.Tech ECE with CSE minor at TGPCET. Embedded, IoT, AI/ML, and web developer. Android-first engineer using Termux.">
+  <meta name="keywords" content="Tejas Bargat, ECE, Portfolio, Netflix Theme, NexusChat, Arduino, 8051, Python, Flask, Termux">
+  <meta name="author" content="Tejas Bargat">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tejas Bargat — ECE Original">
+  <meta property="og:description" content="Engineering hardware that thinks. Designing software that ships. Built on Android from Wardha.">
+  <meta property="og:image" content="assets/tejas-cyber-banner.png">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Netflix Navbar -->
+  <nav class="netflix-nav" id="mainNav">
+    <div class="nav-left">
+      <a href="#" class="brand-logo" id="brandLogo" title="TEJASFLIX — Click for Ta-Dum!">
+        <span class="logo-red">TEJASFLIX</span>
+        <span class="logo-tag">ORIGINAL</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#projects">Top 10</a></li>
+        <li><a href="#episodes">Episodes</a></li>
+        <li><a href="#toolkit">Toolkit</a></li>
+        <li><a href="#journey">Roadmap</a></li>
+        <li><a href="#heatmap">Commit Log</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <!-- Search -->
+      <div class="search-container">
+        <button class="nav-btn search-icon-btn" title="Search Projects & Skills" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <input type="text" class="search-input" id="navSearchInput" placeholder="Titles, tech, tools...">
+      </div>
+
+      <!-- Sound FX Toggle -->
+      <button class="nav-btn" id="soundToggleBtn" title="Sound FX Toggle (Click to play Ta-Dum!)" aria-label="Toggle Sound">
+        <span id="soundIcon">🔊</span>
+      </button>
+
+      <!-- Profile Avatar -->
+      <div class="profile-avatar" title="Tejas Bargat (TB)">TB</div>
+
+      <!-- Mobile Hamburger -->
+      <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Billboard -->
+  <header class="billboard" id="home">
+    <!-- SVG Circuit Background Art -->
+    <img src="assets/hero.svg" alt="Circuit background" class="billboard-bg-svg">
+
+    <div class="billboard-content">
+      <div class="billboard-badge">
+        <div class="n-pill"></div>
+        <span class="series-tag">ECE ORIGINAL SERIES</span>
+      </div>
+
+      <h1 class="billboard-title">
+        TEJAS <span class="red-text">BARGAT</span>
+      </h1>
+
+      <div class="meta-row">
+        <span class="match-score">98% Match</span>
+        <span class="year-tag">2026</span>
+        <span class="age-badge">2ND YEAR</span>
+        <span class="quality-badge">ECE + CSE</span>
+        <span class="quality-badge">ULTRA HD</span>
+      </div>
+
+      <p class="billboard-desc">
+        Engineering hardware that thinks. Designing software that ships.
+      </p>
+
+      <p class="billboard-subdesc">
+        Embedded · IoT · AI/ML · Web · Cybersecurity — built on Android, from Wardha.
+      </p>
+
+      <div class="billboard-actions">
+        <button class="btn-primary" onclick="openModal('nexus')" id="heroPlayBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Play Terminal
+        </button>
+
+        <button class="btn-secondary" onclick="openModal('about')" id="heroMoreInfoBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          More Info
+        </button>
+
+        <button class="btn-icon-circle" onclick="openModal('banner')" title="View Cyberpunk Infographic">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section 1: Top 10 Projects in Tech Today -->
+  <section class="content-section" id="projects">
+    <div class="section-header">
+      <div class="section-bar"></div>
+      <h2 class="section-title">Top 10 Projects by Tejas Today</h2>
+      <span class="section-subtitle">Trending in Embedded, AI & Web</span>
+    </div>
+
+    <div class="top10-grid">
+      <!-- Project 1: NexusChat -->
+      <article class="top10-card" onclick="openModal('nexus')">
+        <div class="top10-poster-wrap">
+          <span class="top10-number">1</span>
+          <img src="assets/poster-nexuschat.svg" alt="NEXUS Chat Poster" class="top10-poster-img">
+          <span class="top10-badge">AI ROUTING</span>
+        </div>
+        <div class="top10-info">
+          <div>
+            <h3 class="top10-title">NEXUS Chat</h3>
+            <div class="top10-meta">
+              <span class="match-score">98% Match</span>
+              <span class="year-tag">Software</span>
+              <span class="quality-badge">Python</span>
+            </div>
+            <p class="top10-desc">Terminal AI chatbot with multi-provider LLM routing, SQLite history, and responsive web frontend.</p>
+          </div>
+          <div>
+            <div class="top10-tags">
+              <span class="tag-pill">Python</span>
+              <span class="tag-pill">Flask</span>
+              <span class="tag-pill">LLM APIs</span>
+              <span class="tag-pill">SQLite</span>
+            </div>
+            <div class="top10-card-actions">
+              <button class="card-action-btn card-play-btn" title="Simulate NEXUS Chat">▶</button>
+              <a href="https://github.com/tejasbargat16-ux/nexuschat" target="_blank" rel="noopener" class="card-action-btn" title="GitHub Repo" onclick="event.stopPropagation()">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: Dual Water Tank -->
+      <article class="top10-card" onclick="openModal('tank')">
+        <div class="top10-poster-wrap">
+          <span class="top10-number">2</span>
+          <img src="assets/poster-water-tank.svg" alt="Dual Water Tank Poster" class="top10-poster-img">
+          <span class="top10-badge">IOT / EMBEDDED</span>
+        </div>
+        <div class="top10-info">
+          <div>
+            <h3 class="top10-title">Dual Tank Monitor</h3>
+            <div class="top10-meta">
+              <span class="match-score">96% Match</span>
+              <span class="year-tag">Hardware</span>
+              <span class="quality-badge">Arduino</span>
+            </div>
+            <p class="top10-desc">Dual water-level monitoring system with HC-SR04 ultrasonic sensors, automated pump switching, and alert alarms.</p>
+          </div>
+          <div>
+            <div class="top10-tags">
+              <span class="tag-pill">Arduino</span>
+              <span class="tag-pill">HC-SR04</span>
+              <span class="tag-pill">C++</span>
+              <span class="tag-pill">Relays</span>
+            </div>
+            <div class="top10-card-actions">
+              <button class="card-action-btn card-play-btn" title="Simulate Water Tank">▶</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3: Solar Tracker -->
+      <article class="top10-card" onclick="openModal('solar')">
+        <div class="top10-poster-wrap">
+          <span class="top10-number">3</span>
+          <img src="assets/poster-solar-tracker.svg" alt="Solar Tracker Poster" class="top10-poster-img">
+          <span class="top10-badge">CLEANTECH</span>
+        </div>
+        <div class="top10-info">
+          <div>
+            <h3 class="top10-title">8051 Solar Tracker</h3>
+            <div class="top10-meta">
+              <span class="match-score">94% Match</span>
+              <span class="year-tag">Embedded</span>
+              <span class="quality-badge">8051 MCU</span>
+            </div>
+            <p class="top10-desc">Dual-axis light-tracking solar array maximizing photovoltaic panel efficiency using LDR differential sensors and stepper control.</p>
+          </div>
+          <div>
+            <div class="top10-tags">
+              <span class="tag-pill">8051</span>
+              <span class="tag-pill">Embedded C</span>
+              <span class="tag-pill">LDRs</span>
+              <span class="tag-pill">Motors</span>
+            </div>
+            <div class="top10-card-actions">
+              <button class="card-action-btn card-play-btn" title="Simulate Solar Tracker">▶</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4: Android-First Dev Station -->
+      <article class="top10-card" onclick="openModal('about')">
+        <div class="top10-poster-wrap">
+          <span class="top10-number">4</span>
+          <div style="background: linear-gradient(135deg, #181818 0%, #29080b 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+            📱
+          </div>
+          <span class="top10-badge">DEV STATION</span>
+        </div>
+        <div class="top10-info">
+          <div>
+            <h3 class="top10-title">Termux Mobile Station</h3>
+            <div class="top10-meta">
+              <span class="match-score">99% Match</span>
+              <span class="year-tag">Workflow</span>
+              <span class="quality-badge">Linux</span>
+            </div>
+            <p class="top10-desc">Full developer ecosystem configured on Android phone via Termux. Code, debug, commit and push without a laptop.</p>
+          </div>
+          <div>
+            <div class="top10-tags">
+              <span class="tag-pill">Termux</span>
+              <span class="tag-pill">Git</span>
+              <span class="tag-pill">Bash</span>
+              <span class="tag-pill">Node/Python</span>
+            </div>
+            <div class="top10-card-actions">
+              <button class="card-action-btn" title="View Story">ℹ️</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 5: JavaScript Journey -->
+      <article class="top10-card" onclick="window.open('https://github.com/tejasbargat16-ux/JavaScript-Learning-Journey', '_blank')">
+        <div class="top10-poster-wrap">
+          <span class="top10-number">5</span>
+          <div style="background: linear-gradient(135deg, #2b2505 0%, #000 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+            ⚡
+          </div>
+          <span class="top10-badge">LEARNING</span>
+        </div>
+        <div class="top10-info">
+          <div>
+            <h3 class="top10-title">JavaScript Journey</h3>
+            <div class="top10-meta">
+              <span class="match-score">95% Match</span>
+              <span class="year-tag">Web</span>
+              <span class="quality-badge">ES6+</span>
+            </div>
+            <p class="top10-desc">Daily structured exercises, DOM experiments, async patterns, and modern front-end mechanics repository.</p>
+          </div>
+          <div>
+            <div class="top10-tags">
+              <span class="tag-pill">JavaScript</span>
+              <span class="tag-pill">Async/Await</span>
+              <span class="tag-pill">DOM</span>
+            </div>
+            <div class="top10-card-actions">
+              <button class="card-action-btn" title="GitHub Repo">🔗</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 6: Java Journey -->
+      <article class="top10-card" onclick="window.open('https://github.com/tejasbargat16-ux/Java-Learning-Journey', '_blank')">
+        <div class="top10-poster-wrap">
+          <span class="top10-number">6</span>
+          <div style="background: linear-gradient(135deg, #1b0a2b 0%, #000 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+            ☕
+          </div>
+          <span class="top10-badge">OOP & CORE</span>
+        </div>
+        <div class="top10-info">
+          <div>
+            <h3 class="top10-title">Java Journey</h3>
+            <div class="top10-meta">
+              <span class="match-score">93% Match</span>
+              <span class="year-tag">Core</span>
+              <span class="quality-badge">Java 17</span>
+            </div>
+            <p class="top10-desc">Systematic deep dive into Java OOP concepts, Collections Framework, Multithreading, and algorithmic foundations.</p>
+          </div>
+          <div>
+            <div class="top10-tags">
+              <span class="tag-pill">Java</span>
+              <span class="tag-pill">OOP</span>
+              <span class="tag-pill">Collections</span>
+            </div>
+            <div class="top10-card-actions">
+              <button class="card-action-btn" title="GitHub Repo">🔗</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Section 2: Episodes — Season 1: The Tejas Story -->
+  <section class="content-section" id="episodes">
+    <div class="section-header">
+      <div class="section-bar"></div>
+      <h2 class="section-title">About — Season 1</h2>
+      <span class="section-subtitle">4 Episodes Available to Stream</span>
+    </div>
+
+    <div class="episodes-list">
+      <!-- Episode 1 -->
+      <article class="episode-row" onclick="openModal('about')">
+        <span class="episode-num">1</span>
+        <div class="episode-thumb">
+          <span class="episode-thumb-icon">🎓</span>
+          <div class="episode-progress-bar" style="width: 45%;"></div>
+        </div>
+        <div class="episode-details">
+          <div class="episode-title-bar">
+            <h3 class="episode-title">The Student</h3>
+            <span class="episode-duration">47m</span>
+          </div>
+          <p class="episode-synopsis">2nd-year B.Tech Electronics & Communication Engineering with a minor in Computer Science at TGPCET, RTMNU. Based in Wardha, Maharashtra.</p>
+        </div>
+      </article>
+
+      <!-- Episode 2 -->
+      <article class="episode-row" onclick="openModal('about')">
+        <span class="episode-num">2</span>
+        <div class="episode-thumb">
+          <span class="episode-thumb-icon">🛠️</span>
+          <div class="episode-progress-bar" style="width: 60%;"></div>
+        </div>
+        <div class="episode-details">
+          <div class="episode-title-bar">
+            <h3 class="episode-title">The Builder</h3>
+            <span class="episode-duration">52m</span>
+          </div>
+          <p class="episode-synopsis">Arduino, 8051, Flask and LLM APIs. Ships real projects with working hardware and live servers instead of only reading theory.</p>
+        </div>
+      </article>
+
+      <!-- Episode 3 -->
+      <article class="episode-row" onclick="openModal('about')">
+        <span class="episode-num">3</span>
+        <div class="episode-thumb">
+          <span class="episode-thumb-icon">🎯</span>
+          <div class="episode-progress-bar" style="width: 35%;"></div>
+        </div>
+        <div class="episode-details">
+          <div class="episode-title-bar">
+            <h3 class="episode-title">The Aspirant</h3>
+            <span class="episode-duration">44m</span>
+          </div>
+          <p class="episode-synopsis">Preparing for GATE EC while pursuing high-impact internships in embedded systems, IoT, AI/ML, and software engineering.</p>
+        </div>
+      </article>
+
+      <!-- Episode 4 -->
+      <article class="episode-row" onclick="openModal('about')">
+        <span class="episode-num">4</span>
+        <div class="episode-thumb">
+          <span class="episode-thumb-icon">📲</span>
+          <div class="episode-progress-bar" style="width: 90%;"></div>
+        </div>
+        <div class="episode-details">
+          <div class="episode-title-bar">
+            <h3 class="episode-title">The Android-First Dev</h3>
+            <span class="episode-duration">39m</span>
+          </div>
+          <p class="episode-synopsis">No laptop. Everything is written, tested and pushed directly from an Android smartphone with Termux. Pure resilience and craftsmanship.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Section 3: Because You Watched: Engineering (The Toolkit) -->
+  <section class="content-section" id="toolkit">
+    <div class="section-header">
+      <div class="section-bar"></div>
+      <h2 class="section-title">Because You Watched: Engineering</h2>
+      <span class="section-subtitle">Skills, Languages & Technologies</span>
+    </div>
+
+    <!-- Category filter tabs -->
+    <div class="toolkit-tabs">
+      <button class="toolkit-tab-btn active" data-cat="all">All Tech</button>
+      <button class="toolkit-tab-btn" data-cat="lang">Languages</button>
+      <button class="toolkit-tab-btn" data-cat="hardware">Hardware & IoT</button>
+      <button class="toolkit-tab-btn" data-cat="backend">Backend & AI</button>
+      <button class="toolkit-tab-btn" data-cat="tools">Tools & DevOps</button>
+    </div>
+
+    <div class="toolkit-grid">
+      <!-- Languages -->
+      <div class="tech-card" data-cat="lang">
+        <div class="tech-cat">Language</div>
+        <div class="tech-name">PYTHON</div>
+        <div class="tech-sub">Scripting, Flask, AI</div>
+      </div>
+      <div class="tech-card" data-cat="lang">
+        <div class="tech-cat">Language</div>
+        <div class="tech-name">JAVA</div>
+        <div class="tech-sub">OOP, Core Architectures</div>
+      </div>
+      <div class="tech-card" data-cat="lang">
+        <div class="tech-cat">Language</div>
+        <div class="tech-name">C / C++</div>
+        <div class="tech-sub">Low-level, Embedded Systems</div>
+      </div>
+      <div class="tech-card" data-cat="lang">
+        <div class="tech-cat">Language</div>
+        <div class="tech-name">JAVASCRIPT</div>
+        <div class="tech-sub">Modern ES6+, DOM, APIs</div>
+      </div>
+
+      <!-- Hardware -->
+      <div class="tech-card" data-cat="hardware">
+        <div class="tech-cat">Hardware</div>
+        <div class="tech-name">ARDUINO</div>
+        <div class="tech-sub">Sensors, Actuators, I/O</div>
+      </div>
+      <div class="tech-card" data-cat="hardware">
+        <div class="tech-cat">Hardware</div>
+        <div class="tech-name">8051 MCU</div>
+        <div class="tech-sub">Microcontroller Architecture</div>
+      </div>
+      <div class="tech-card" data-cat="hardware">
+        <div class="tech-cat">Hardware</div>
+        <div class="tech-name">HC-SR04 & LDR</div>
+        <div class="tech-sub">Ultrasonic & Optical Sensors</div>
+      </div>
+
+      <!-- Backend & AI -->
+      <div class="tech-card" data-cat="backend">
+        <div class="tech-cat">Backend</div>
+        <div class="tech-name">FLASK</div>
+        <div class="tech-sub">REST APIs & Routing</div>
+      </div>
+      <div class="tech-card" data-cat="backend">
+        <div class="tech-cat">AI</div>
+        <div class="tech-name">LLM APIS</div>
+        <div class="tech-sub">Multi-provider Orchestration</div>
+      </div>
+      <div class="tech-card" data-cat="backend">
+        <div class="tech-cat">Data</div>
+        <div class="tech-name">SQLITE</div>
+        <div class="tech-sub">Relational Persistence</div>
+      </div>
+
+      <!-- Tools -->
+      <div class="tech-card" data-cat="tools">
+        <div class="tech-cat">Tools</div>
+        <div class="tech-name">GIT + GITHUB</div>
+        <div class="tech-sub">Version Control, Actions</div>
+      </div>
+      <div class="tech-card" data-cat="tools">
+        <div class="tech-cat">Tools</div>
+        <div class="tech-name">TERMUX</div>
+        <div class="tech-sub">Android Terminal Workstation</div>
+      </div>
+      <div class="tech-card" data-cat="tools">
+        <div class="tech-cat">Tools</div>
+        <div class="tech-name">LINUX</div>
+        <div class="tech-sub">CLI, Bash & Utilities</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Continue Watching (Learning Journey) -->
+  <section class="content-section" id="journey">
+    <div class="section-header">
+      <div class="section-bar"></div>
+      <h2 class="section-title">Continue Watching</h2>
+      <span class="section-subtitle">Skill Progression & Milestones</span>
+    </div>
+
+    <div class="journey-grid">
+      <div class="journey-card">
+        <div class="journey-thumb">
+          <div class="journey-play-icon">✓</div>
+          <div class="journey-progress">
+            <div class="journey-progress-fill" style="width: 100%;"></div>
+          </div>
+        </div>
+        <div class="journey-info">
+          <h3 class="journey-title">Git &amp; GitHub</h3>
+          <p class="journey-status">Status: Completed · Daily Active</p>
+        </div>
+      </div>
+
+      <div class="journey-card">
+        <div class="journey-thumb">
+          <div class="journey-play-icon">✓</div>
+          <div class="journey-progress">
+            <div class="journey-progress-fill" style="width: 100%;"></div>
+          </div>
+        </div>
+        <div class="journey-info">
+          <h3 class="journey-title">Arduino Projects</h3>
+          <p class="journey-status">Status: Completed · Prototypes Built</p>
+        </div>
+      </div>
+
+      <div class="journey-card">
+        <div class="journey-thumb">
+          <div class="journey-play-icon">▶</div>
+          <div class="journey-progress">
+            <div class="journey-progress-fill" style="width: 65%;"></div>
+          </div>
+        </div>
+        <div class="journey-info">
+          <h3 class="journey-title">Python Mastery</h3>
+          <p class="journey-status">Status: In Progress · Flask &amp; AI</p>
+        </div>
+      </div>
+
+      <div class="journey-card">
+        <div class="journey-thumb">
+          <div class="journey-play-icon">▶</div>
+          <div class="journey-progress">
+            <div class="journey-progress-fill" style="width: 50%;"></div>
+          </div>
+        </div>
+        <div class="journey-info">
+          <h3 class="journey-title">Java Journey</h3>
+          <p class="journey-status">Status: In Progress · OOP &amp; Core</p>
+        </div>
+      </div>
+
+      <div class="journey-card">
+        <div class="journey-thumb">
+          <div class="journey-play-icon">▶</div>
+          <div class="journey-progress">
+            <div class="journey-progress-fill" style="width: 55%;"></div>
+          </div>
+        </div>
+        <div class="journey-info">
+          <h3 class="journey-title">JavaScript Journey</h3>
+          <p class="journey-status">Status: In Progress · Daily Practice</p>
+        </div>
+      </div>
+
+      <div class="journey-card">
+        <div class="journey-thumb">
+          <div class="journey-play-icon">⏳</div>
+          <div class="journey-progress">
+            <div class="journey-progress-fill" style="width: 10%;"></div>
+          </div>
+        </div>
+        <div class="journey-info">
+          <h3 class="journey-title">DSA &amp; GATE EC</h3>
+          <p class="journey-status">Status: Up Next · Core Focus</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Trending Now: Commit Log (Live GitHub Heatmap) -->
+  <section class="content-section" id="heatmap">
+    <div class="section-header">
+      <div class="section-bar"></div>
+      <h2 class="section-title">Trending Now: My Commit Log</h2>
+      <span class="section-subtitle">Real Public GitHub Activity · Refreshed Daily</span>
+    </div>
+
+    <div class="heatmap-container">
+      <div class="heatmap-stats-banner">
+        <div class="hm-stat-item">
+          <span class="hm-stat-label">Contributions</span>
+          <span class="hm-stat-value" id="statTotalContribs">114</span>
+          <span class="hm-stat-sub">Past 12 months</span>
+        </div>
+        <div class="hm-stat-item">
+          <span class="hm-stat-label">Active Days</span>
+          <span class="hm-stat-value" id="statActiveDays">Loading...</span>
+          <span class="hm-stat-sub">Commits shipped</span>
+        </div>
+        <div class="hm-stat-item">
+          <span class="hm-stat-label">Longest Streak</span>
+          <span class="hm-stat-value" id="statLongestStreak">Loading...</span>
+          <span class="hm-stat-sub">Consecutive days</span>
+        </div>
+        <div class="hm-stat-item">
+          <span class="hm-stat-label">Busiest Day</span>
+          <span class="hm-stat-value" id="statPeakDay">Loading...</span>
+          <span class="hm-stat-sub">Peak velocity</span>
+        </div>
+      </div>
+
+      <div class="heatmap-scroll">
+        <img src="assets/contribution-snake.svg" alt="GitHub Contribution Snake SVG" class="heatmap-svg-embed">
+      </div>
+
+      <div class="heatmap-footer-note">
+        <span>Source: public GitHub calendar for @tejasbargat16-ux</span>
+        <span>Animated Slithering Snake eating daily contributions</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Cyberpunk Visual Banner Feature -->
+  <section class="content-section">
+    <div class="section-header">
+      <div class="section-bar"></div>
+      <h2 class="section-title">Engineering Visual Blueprint</h2>
+      <span class="section-subtitle">System Architecture &amp; Vision</span>
+    </div>
+
+    <div class="cyber-banner-wrap" onclick="openModal('banner')">
+      <img src="assets/tejas-cyber-banner.png" alt="Tejas Bargat Cyberpunk Architecture Infographic" class="cyber-banner-img">
+      <div class="cyber-overlay">
+        <div>
+          <span class="tag-pill" style="background: var(--netflix-red); color: #fff;">EXCLUSIVE INFOGRAPHIC</span>
+          <h3 style="font-size: 24px; font-weight: 800; margin-top: 8px;">Hardware &amp; AI Integration Blueprint</h3>
+        </div>
+        <button class="btn-primary" style="padding: 8px 16px; font-size: 14px;">Expand View</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="netflix-footer" id="connect">
+    <div class="footer-quote">BUILD. LEARN. BREAK. FIX.</div>
+    <div class="footer-subquote">REPEAT.</div>
+
+    <div class="footer-social-links">
+      <a href="https://github.com/tejasbargat16-ux" target="_blank" rel="noopener" class="social-badge-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/tejas-bargat-9ab8523b0" target="_blank" rel="noopener" class="social-badge-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://instagram.com/_tejas_bargat_01_" target="_blank" rel="noopener" class="social-badge-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        Instagram
+      </a>
+      <a href="mailto:tejasbargat16@gmail.com" class="social-badge-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 4.714v-9.428l4.623 4.714zm1.441 1.468l3.936 4.015 3.936-4.015 5.928 6.603h-19.728l5.928-6.603zm9.313-1.468l4.623-4.714v9.428l-4.623-4.714zm-5.377-1.472l-9.845-10.457h19.691l-9.846 10.457z"/></svg>
+        Email
+      </a>
+    </div>
+
+    <p class="footer-credits">
+      A TEJAS BARGAT ORIGINAL · NEW EPISODES WEEKLY · WARDHA, MAHARASHTRA
+    </p>
+  </footer>
+
+  <!-- Interactive Modals Container -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="n-pill"></span>
+          <h3 class="modal-title" id="modalTitle">Project Experience</h3>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- 1. NEXUS Chat Terminal Simulator -->
+        <div class="modal-view" id="modal-nexus">
+          <p style="margin-bottom: 12px; font-size: 14px; color: var(--text-muted);">
+            Interactive live simulation of <strong>NEXUS Chat</strong>. Type queries to test the multi-provider routing engine:
+          </p>
+
+          <div class="terminal-box">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span style="font-size: 11px; color: #8F9BB3;">nexus-chat v1.2 — termux@android</span>
+            </div>
+            <div class="terminal-screen" id="termScreen">
+              <div class="term-msg sys">[NEXUS SYSTEM INITIALIZED] Multi-provider LLM gateway connected.</div>
+              <div class="term-msg sys">Type 'help', 'tech', or ask any engineering question below.</div>
+            </div>
+            <div class="terminal-input-bar">
+              <span class="terminal-prompt">nexus&gt;</span>
+              <input type="text" class="terminal-input" id="terminalInput" placeholder="Try 'what is your tech stack?' or 'tell me about your projects'...">
+            </div>
+          </div>
+
+          <div style="margin-top: 16px; display: flex; gap: 12px; justify-content: flex-end;">
+            <a href="https://github.com/tejasbargat16-ux/nexuschat" target="_blank" rel="noopener" class="btn-primary" style="font-size: 14px; padding: 8px 18px;">
+              View Source on GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Dual Water Tank Ultrasonic Simulator -->
+        <div class="modal-view" id="modal-tank" style="display: none;">
+          <p style="margin-bottom: 16px; font-size: 14px; color: var(--text-muted);">
+            Simulating HC-SR04 ultrasonic distance sensor reading water surface levels with automated relay pump trigger:
+          </p>
+
+          <div class="tank-visual">
+            <div class="tank-water" id="tankWaterLevel" style="height: 50%;"></div>
+          </div>
+
+          <div class="sim-controls">
+            <div class="sim-slider-row">
+              <label for="waterLevelSlider" style="font-size: 13px; min-width: 130px;">Water Reservoir Level:</label>
+              <input type="range" class="sim-slider" id="waterLevelSlider" min="5" max="95" value="50">
+            </div>
+
+            <div style="background: #111; padding: 14px; border-radius: 6px; font-family: var(--font-mono); font-size: 13px;">
+              <div>Sensor Distance: <span id="sensorDist" style="color: #00b4d8; font-weight: 700;">28 cm</span></div>
+              <div style="margin-top: 6px;">Relay Output: <span id="pumpStatus" style="color: #FFD700; font-weight: 700;">PUMP STANDBY (Normal Level)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Solar Tracker Simulator -->
+        <div class="modal-view" id="modal-solar" style="display: none;">
+          <p style="margin-bottom: 16px; font-size: 14px; color: var(--text-muted);">
+            Simulating 8051 microcontroller comparing LDR1 and LDR2 light levels to rotate stepper motor:
+          </p>
+
+          <div style="height: 140px; display: flex; align-items: center; justify-content: center; position: relative;">
+            <div id="solarPanelSim" style="width: 140px; height: 18px; background: #E50914; border-radius: 4px; box-shadow: 0 0 15px rgba(229,9,20,0.5); transition: transform 0.2s ease;"></div>
+          </div>
+
+          <div class="sim-controls">
+            <div class="sim-slider-row">
+              <label for="sunAngleSlider" style="font-size: 13px; min-width: 130px;">Virtual Sun Angle:</label>
+              <input type="range" class="sim-slider" id="sunAngleSlider" min="-60" max="60" value="0">
+            </div>
+
+            <div style="background: #111; padding: 14px; border-radius: 6px; font-family: var(--font-mono); font-size: 13px;">
+              <div>Stepper Motor Angle: <span id="motorAngle" style="color: #E50914; font-weight: 700;">0°</span></div>
+              <div style="margin-top: 4px;">LDR Left: <span id="ldr1Val" style="color: #46D369;">512 mV</span> | LDR Right: <span id="ldr2Val" style="color: #46D369;">512 mV</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. About Series Deep Dive -->
+        <div class="modal-view" id="modal-about" style="display: none;">
+          <h4 style="font-size: 18px; margin-bottom: 10px; color: #fff;">Tejas Bargat — Behind the Scenes</h4>
+          <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+            Tejas is an Electronics & Communication Engineering undergraduate (2nd Year) at TGPCET, RTMNU, with a minor in Computer Science. His philosophy is simple: <em>"Build. Learn. Break. Fix. Repeat."</em>
+          </p>
+          <div style="background: #111; padding: 16px; border-radius: 8px; border-left: 4px solid var(--netflix-red); font-size: 14px; color: #ddd; line-height: 1.6;">
+            <strong>The Android-First Story:</strong> Without access to a personal laptop, Tejas turns constraint into superpower. Using Termux on Android, he configures complete Git, Node.js, and Python runtime environments to write code, manage SQLite databases, test APIs, and push daily GitHub commits directly from mobile hardware.
+          </div>
+        </div>
+
+        <!-- 5. Full-Res Cyber Blueprint Banner -->
+        <div class="modal-view" id="modal-banner" style="display: none;">
+          <img src="assets/tejas-cyber-banner.png" alt="Tejas Bargat Cyberpunk Architecture Infographic" style="width: 100%; border-radius: 6px; display: block;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

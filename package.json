@@ -1,15 +1,27 @@
 {
-  "name": "tejas-profile-heatmap",
-  "version": "1.0.0",
-  "description": "Renders the profile contribution snake from real GitHub data",
+  "name": "tejas-profile-netflix",
+  "version": "1.1.0",
+  "description": "Netflix-themed GitHub Profile & Interactive Portfolio for Tejas Bargat",
   "type": "module",
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "generate": "node scripts/fetch-contributions.mjs && node scripts/build-heatmap-svg.mjs",
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "build": "node generate.mjs",
+    "generate": "node generate.mjs",
     "contributions": "node scripts/fetch-contributions.mjs",
-    "render": "node scripts/build-heatmap-svg.mjs",
-    "build": "node scripts/build-heatmap-svg.mjs"
-  }
+    "build:svg": "node scripts/build-heatmap-svg.mjs"
+  },
+  "keywords": [
+    "netflix-theme",
+    "github-profile",
+    "portfolio",
+    "svg-generator",
+    "contribution-snake",
+    "tejas-bargat"
+  ],
+  "author": "Tejas Bargat",
+  "license": "MIT"
 }
