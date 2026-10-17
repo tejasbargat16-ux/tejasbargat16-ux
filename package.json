@@ -1,0 +1,15 @@
+{
+  "name": "tejas-profile-heatmap",
+  "version": "1.0.0",
+  "description": "Renders the profile contribution snake from real GitHub data",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "generate": "node scripts/fetch-contributions.mjs && node scripts/build-heatmap-svg.mjs",
+    "contributions": "node scripts/fetch-contributions.mjs",
+    "render": "node scripts/build-heatmap-svg.mjs",
+    "build": "node scripts/build-heatmap-svg.mjs"
+  }
+}

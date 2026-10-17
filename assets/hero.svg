@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="Tejas Bargat. Electronics and software engineering student. Embedded systems, IoT, AI and web. Building on Android.">
+<defs><linearGradient id="hb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07121A"/><stop offset="1" stop-color="#050B11"/></linearGradient>
+<radialGradient id="hg" cx="75%" cy="30%" r="70%"><stop offset="0" stop-color="#0B4F6C" stop-opacity=".8"/><stop offset="1" stop-color="#083A50" stop-opacity="0"/></radialGradient>
+<linearGradient id="hs" gradientUnits="userSpaceOnUse" x1="-500" x2="0"><stop offset="0" stop-color="#7FE8FF"/><stop offset=".5" stop-color="#EAFBFF"/><stop offset="1" stop-color="#7FE8FF"/><animateTransform attributeName="gradientTransform" type="translate" values="0 0;1500 0;1500 0" keyTimes="0;.4;1" dur="7s" begin="1.5s" repeatCount="indefinite"/></linearGradient>
+<pattern id="hr" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#00D9FF" stroke-opacity=".07"/></pattern></defs><style>
+.serif{font-family:Georgia,"Iowan Old Style","Palatino Linotype",serif}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.in{animation:in 1.1s cubic-bezier(.16,1,.3,1) both}.d2{animation-delay:.2s}.d3{animation-delay:.45s}
+.draw{stroke-dasharray:1200;stroke-dashoffset:1200;animation:draw 1.8s cubic-bezier(.65,0,.35,1) .5s forwards}
+@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.in{animation:none}.draw{animation:none;stroke-dashoffset:0}}
+</style>
+<rect width="1200" height="420" rx="20" fill="url(#hb)"/><rect width="1200" height="420" rx="20" fill="url(#hg)"/><rect width="1200" height="420" rx="20" fill="url(#hr)"/>
+<rect x=".5" y=".5" width="1199" height="419" rx="19.5" fill="none" stroke="#00D9FF" stroke-opacity=".2"/>
+<!-- circuit traces -->
+<g fill="none" stroke="#00D9FF" stroke-opacity=".35" stroke-width="1.5"><path class="draw" d="M720 90H860V160H980V110H1140"/><path class="draw" d="M760 330H900V250H1060V320H1140" style="animation-delay:.9s"/><path class="draw" d="M820 210H940" style="animation-delay:1.3s"/></g>
+<g fill="#00D9FF"><circle cx="860" cy="90" r="4"/><circle cx="980" cy="160" r="4"/><circle cx="900" cy="330" r="4"/><circle cx="1060" cy="250" r="4"/><circle cx="940" cy="210" r="4"><animate attributeName="opacity" values="1;.2;1" dur="2s" repeatCount="indefinite"/></circle></g>
+<g class="in"><text class="mono" x="70" y="100" font-size="13" letter-spacing="4" fill="#00D9FF">ECE  ×  CSE  ·  WARDHA, INDIA</text></g>
+<g class="in d2"><text class="serif" x="66" y="195" font-size="84" font-weight="300" letter-spacing="-2" fill="#EAFBFF">Tejas <tspan font-style="italic" fill="url(#hs)">Bargat</tspan></text></g>
+<g class="in d3"><text class="serif" x="68" y="252" font-size="28" font-weight="300" fill="#7FE8FF">Engineering hardware that thinks.</text>
+<text class="serif" x="68" y="290" font-size="28" font-weight="300" font-style="italic" fill="#EAFBFF">Designing software that ships.</text></g>
+<g class="in d3"><text class="mono" x="70" y="350" font-size="12.5" letter-spacing="2" fill="#8FB0BC">EMBEDDED  ·  IoT  ·  AI/ML  ·  WEB  ·  CYBERSECURITY</text></g></svg>
