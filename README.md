@@ -119,6 +119,7 @@ TEJASFLIX is architected into two synchronized layers:
 ### 📂 Directory Structure
 
 ```text
+
 ├── assets/                       # Profile SVGs and billboard graphics
 │   ├── hero.svg                  # Cinematic billboard header
 │   ├── contribution-snake.svg    # Animated slithering contribution heatmap
