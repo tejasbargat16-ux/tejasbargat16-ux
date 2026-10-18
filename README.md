@@ -60,7 +60,13 @@
 Launch the full responsive web app with interactive project simulators, live commit analytics, and synthesized Netflix audio:
 
 ```bash
-# Start local streaming server
+# Clone the repository
+git clone https://github.com/tejasbargat16-ux/tejasbargat16-ux.git
+
+# Navigate to project directory
+cd tejasbargat16-ux
+
+# Start local streaming server (zero external npm dependencies required)
 npm start
 ```
 
@@ -69,7 +75,72 @@ npm start
 | Command | Action |
 |:---|:---|
 | `npm start` / `npm run dev` | Launch local streaming web app on port 3000 |
-| `npm run generate` / `npm run build` | Refresh SVG assets and verify integrity |
-| `npm run contributions` | Fetch live contribution data from GitHub |
+| `npm run generate` / `npm run build` | Refresh SVG assets, rebuild heatmap & sync to `site/assets/` |
+| `npm run contributions` | Fetch live contribution data from GitHub public profile |
+| `npm run build:svg` | Re-render contribution snake SVG from data snapshot |
+
+---
+
+### 🏛️ Architecture & System Blueprint
+
+TEJASFLIX is architected into two synchronized layers:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    TEJASFLIX ECOSYSTEM                      │
+├──────────────────────────────┬──────────────────────────────┤
+│    GitHub Profile README     │   Interactive Web Stream     │
+│   (Static SVG & Badges)      │   (Zero-Dep Vanilla App)     │
+├──────────────────────────────┼──────────────────────────────┤
+│ • assets/*.svg visual assets │ • site/index.html (HTML5)    │
+│ • Real commit snake SVG      │ • site/style.css (Dark Mode) │
+│ • Shields.io social badges   │ • site/app.js (Web Audio)    │
+│ • Daily auto-refresh via CI  │ • Hardware & AI Simulators   │
+└──────────────┬───────────────┴──────────────┬───────────────┘
+               │                              │
+               └──────────────┬───────────────┘
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│               AUTOMATION & PIPELINE (CI/CD)                 │
+├─────────────────────────────────────────────────────────────┤
+│ • .github/workflows/profile-heatmap.yml (Daily at 05:30 UTC)│
+│ • .github/workflows/pages.yml (Continuous Deployment)       │
+│ • generate.mjs (Automated build & asset synchronization)    │
+└─────────────────────────────────────────────────────────────┘
+```
+
+#### 🛠️ Key Highlights:
+1. **Audio Synthesis (Zero Audio Files)**: Custom Web Audio API synthesizer in `site/app.js` recreating the Netflix cinematic "Ta-Dum" intro chord using oscillators, low-pass filters, and harmonic sweeps.
+2. **Interactive Hardware Simulators**: In-browser interactive models of the HC-SR04 Dual Water Tank, 8051 Dual-Axis Solar Tracker, Smart Irrigation controller, and NEXUS AI multi-provider terminal.
+3. **Android-First Engineering**: Every line of code, circuit schematic, and commit was built and pushed from an Android smartphone via **Termux**.
+
+---
+
+### 📂 Directory Structure
+
+```text
+├── assets/                       # Profile SVGs and billboard graphics
+│   ├── hero.svg                  # Cinematic billboard header
+│   ├── contribution-snake.svg    # Animated slithering contribution heatmap
+│   ├── poster-*.svg              # Project poster cards
+│   └── row-*.svg                 # Netflix category divider SVGs
+├── scripts/                      # Build, dev server and scraper scripts
+│   ├── build-heatmap-svg.mjs     # Standalone heatmap SVG generator
+│   ├── fetch-contributions.mjs   # Scrapes/fetches public GitHub contributions
+│   └── serve.mjs                 # Zero-dependency local dev HTTP server
+├── site/                         # Production web application (GitHub Pages)
+│   ├── assets/                   # Synced SVGs and banner assets
+│   ├── data/contributions.json   # Real contribution snapshot data
+│   ├── index.html                # Semantic HTML5 interactive application
+│   ├── style.css                 # Netflix design system stylesheet
+│   └── app.js                    # Audio engine, simulators & event handlers
+├── .github/workflows/            # GitHub Actions CI/CD automation
+│   ├── pages.yml                 # Automated deployment to GitHub Pages
+│   └── profile-heatmap.yml       # Daily automated contribution snake refresh
+├── generate.mjs                  # Asset compilation & synchronization pipeline
+├── package.json                  # Scripts and repository metadata
+└── README.md                     # Profile presentation & documentation
+```
 
 </div>
+

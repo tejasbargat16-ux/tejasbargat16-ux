@@ -218,7 +218,7 @@
       </article>
 
       <!-- Project 4: Android-First Dev Station -->
-      <article class="top10-card" onclick="openModal('about')">
+      <article class="top10-card" onclick="openModal('termux')">
         <div class="top10-poster-wrap">
           <span class="top10-number">4</span>
           <div style="background: linear-gradient(135deg, #181818 0%, #29080b 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 48px;">
@@ -244,14 +244,14 @@
               <span class="tag-pill">Node/Python</span>
             </div>
             <div class="top10-card-actions">
-              <button class="card-action-btn" title="View Story">ℹ️</button>
+              <button class="card-action-btn card-play-btn" title="Simulate Termux">▶</button>
             </div>
           </div>
         </div>
       </article>
 
       <!-- Project 5: JavaScript Journey -->
-      <article class="top10-card" onclick="window.open('https://github.com/tejasbargat16-ux/JavaScript-Learning-Journey', '_blank')">
+      <article class="top10-card" onclick="openModal('js')">
         <div class="top10-poster-wrap">
           <span class="top10-number">5</span>
           <div style="background: linear-gradient(135deg, #2b2505 0%, #000 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 48px;">
@@ -276,14 +276,17 @@
               <span class="tag-pill">DOM</span>
             </div>
             <div class="top10-card-actions">
-              <button class="card-action-btn" title="GitHub Repo">🔗</button>
+              <button class="card-action-btn card-play-btn" title="View JavaScript Journey">▶</button>
+              <a href="https://github.com/tejasbargat16-ux/JavaScript-Learning-Journey" target="_blank" rel="noopener" class="card-action-btn" title="GitHub Repo" onclick="event.stopPropagation()">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
             </div>
           </div>
         </div>
       </article>
 
       <!-- Project 6: Java Journey -->
-      <article class="top10-card" onclick="window.open('https://github.com/tejasbargat16-ux/Java-Learning-Journey', '_blank')">
+      <article class="top10-card" onclick="openModal('java')">
         <div class="top10-poster-wrap">
           <span class="top10-number">6</span>
           <div style="background: linear-gradient(135deg, #1b0a2b 0%, #000 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 48px;">
@@ -308,11 +311,153 @@
               <span class="tag-pill">Collections</span>
             </div>
             <div class="top10-card-actions">
-              <button class="card-action-btn" title="GitHub Repo">🔗</button>
+              <button class="card-action-btn card-play-btn" title="View Java Journey">▶</button>
+              <a href="https://github.com/tejasbargat16-ux/Java-Learning-Journey" target="_blank" rel="noopener" class="card-action-btn" title="GitHub Repo" onclick="event.stopPropagation()">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
             </div>
           </div>
         </div>
       </article>
+
+      <!-- Project 7: Smart Irrigation Controller -->
+      <article class="top10-card" onclick="openModal('irrigation')">
+        <div class="top10-poster-wrap">
+          <span class="top10-number">7</span>
+          <div style="background: linear-gradient(135deg, #092c15 0%, #000 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+            🌱
+          </div>
+          <span class="top10-badge">AGRITECH IOT</span>
+        </div>
+        <div class="top10-info">
+          <div>
+            <h3 class="top10-title">Smart Irrigation Controller</h3>
+            <div class="top10-meta">
+              <span class="match-score">95% Match</span>
+              <span class="year-tag">Hardware</span>
+              <span class="quality-badge">Arduino</span>
+            </div>
+            <p class="top10-desc">Automated soil moisture sensing system with precision solenoid water valves and hysteresis threshold control to prevent over-watering.</p>
+          </div>
+          <div>
+            <div class="top10-tags">
+              <span class="tag-pill">Arduino</span>
+              <span class="tag-pill">Moisture ADC</span>
+              <span class="tag-pill">Relays</span>
+              <span class="tag-pill">Embedded C</span>
+            </div>
+            <div class="top10-card-actions">
+              <button class="card-action-btn card-play-btn" title="Simulate Smart Irrigation">▶</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 8: Micro-Flask LLM Router -->
+      <article class="top10-card" onclick="openModal('api')">
+        <div class="top10-poster-wrap">
+          <span class="top10-number">8</span>
+          <div style="background: linear-gradient(135deg, #14213d 0%, #000 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+            🧠
+          </div>
+          <span class="top10-badge">BACKEND / AI</span>
+        </div>
+        <div class="top10-info">
+          <div>
+            <h3 class="top10-title">Flask LLM Gateway</h3>
+            <div class="top10-meta">
+              <span class="match-score">97% Match</span>
+              <span class="year-tag">API Engine</span>
+              <span class="quality-badge">Python</span>
+            </div>
+            <p class="top10-desc">Microservice API routing queries dynamically across Anthropic, OpenAI, and Groq endpoints with fallback failover and SQLite logging.</p>
+          </div>
+          <div>
+            <div class="top10-tags">
+              <span class="tag-pill">Python</span>
+              <span class="tag-pill">Flask</span>
+              <span class="tag-pill">REST</span>
+              <span class="tag-pill">LLM Gateway</span>
+            </div>
+            <div class="top10-card-actions">
+              <button class="card-action-btn card-play-btn" title="View Architecture">▶</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 9: 8051 Digital Event Counter -->
+      <article class="top10-card" onclick="openModal('counter')">
+        <div class="top10-poster-wrap">
+          <span class="top10-number">9</span>
+          <div style="background: linear-gradient(135deg, #2c0b0e 0%, #000 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+            ⏱️
+          </div>
+          <span class="top10-badge">MCU SYSTEM</span>
+        </div>
+        <div class="top10-info">
+          <div>
+            <h3 class="top10-title">8051 Digital Stopwatch</h3>
+            <div class="top10-meta">
+              <span class="match-score">92% Match</span>
+              <span class="year-tag">Assembly</span>
+              <span class="quality-badge">8051</span>
+            </div>
+            <p class="top10-desc">Hardware interrupt-driven precision digital stopwatch and event counter multiplexed across 7-segment LED displays.</p>
+          </div>
+          <div>
+            <div class="top10-tags">
+              <span class="tag-pill">8051</span>
+              <span class="tag-pill">Assembly</span>
+              <span class="tag-pill">Timers</span>
+              <span class="tag-pill">7-Segment</span>
+            </div>
+            <div class="top10-card-actions">
+              <button class="card-action-btn card-play-btn" title="View Circuit Details">▶</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 10: Android DevOps Environment -->
+      <article class="top10-card" onclick="openModal('dotfiles')">
+        <div class="top10-poster-wrap">
+          <span class="top10-number">10</span>
+          <div style="background: linear-gradient(135deg, #0e1e25 0%, #000 100%); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 48px;">
+            ⚙️
+          </div>
+          <span class="top10-badge">AUTOMATION</span>
+        </div>
+        <div class="top10-info">
+          <div>
+            <h3 class="top10-title">Mobile DevOps Toolchain</h3>
+            <div class="top10-meta">
+              <span class="match-score">98% Match</span>
+              <span class="year-tag">Tooling</span>
+              <span class="quality-badge">Termux</span>
+            </div>
+            <p class="top10-desc">Turnkey shell configuration, automated Git hooks, micro-editor bindings, and battery-optimized build scripts for Android CLI dev.</p>
+          </div>
+          <div>
+            <div class="top10-tags">
+              <span class="tag-pill">Bash</span>
+              <span class="tag-pill">Termux</span>
+              <span class="tag-pill">Git Hooks</span>
+              <span class="tag-pill">Dotfiles</span>
+            </div>
+            <div class="top10-card-actions">
+              <button class="card-action-btn card-play-btn" title="View Toolchain Details">▶</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Empty Search State -->
+    <div id="searchEmptyState" class="search-empty-state" style="display: none;">
+      <div style="font-size: 42px; margin-bottom: 12px;">🔍</div>
+      <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 6px;">No Titles Found</h3>
+      <p style="color: var(--text-muted); font-size: 14px;">Try searching for "Arduino", "Python", "8051", "Termux", or "Java".</p>
     </div>
   </section>
 
@@ -769,6 +914,135 @@
         <!-- 5. Full-Res Cyber Blueprint Banner -->
         <div class="modal-view" id="modal-banner" style="display: none;">
           <img src="assets/tejas-cyber-banner.png" alt="Tejas Bargat Cyberpunk Architecture Infographic" style="width: 100%; border-radius: 6px; display: block;">
+        </div>
+
+        <!-- 6. Termux Mobile Station Simulator -->
+        <div class="modal-view" id="modal-termux" style="display: none;">
+          <p style="margin-bottom: 12px; font-size: 14px; color: var(--text-muted);">
+            Simulating <strong>Termux on Android</strong> terminal workstation. Type commands to explore the mobile engineering workflow:
+          </p>
+          <div class="terminal-box">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span style="font-size: 11px; color: #8F9BB3;">termux ~ u0_a248@localhost (arm64)</span>
+            </div>
+            <div class="terminal-screen" id="termuxScreen">
+              <div class="term-msg sys">[TERMUX ENVIRONMENT ONLINE] Architecture: aarch64 Android 14.</div>
+              <div class="term-msg sys">Packages loaded: git, python 3.12, nodejs-lts 22, clang, sqlite, bash.</div>
+              <div class="term-msg sys">Type 'help', 'git status', 'uname', 'neofetch', or 'projects'.</div>
+            </div>
+            <div class="terminal-input-bar">
+              <span class="terminal-prompt" style="color: #46D369;">~ $</span>
+              <input type="text" class="terminal-input" id="termuxInput" placeholder="Try 'git status', 'neofetch', 'pkg list'...">
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Smart Irrigation & Soil Moisture Simulator -->
+        <div class="modal-view" id="modal-irrigation" style="display: none;">
+          <p style="margin-bottom: 16px; font-size: 14px; color: var(--text-muted);">
+            Simulating analog soil capacitive moisture sensor and automated 12V solenoid valve relay switching:
+          </p>
+          <div style="background: #111; padding: 20px; border-radius: 8px; border: 1px solid var(--border-subtle); text-align: center; margin-bottom: 16px;">
+            <div style="font-size: 32px; margin-bottom: 8px;" id="moistureEmoji">🌱</div>
+            <div style="font-size: 28px; font-weight: 800; color: #46D369;" id="moisturePct">42%</div>
+            <div style="font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px;">Soil Moisture Index</div>
+          </div>
+          <div class="sim-controls">
+            <div class="sim-slider-row">
+              <label for="soilMoistureSlider" style="font-size: 13px; min-width: 140px;">Soil Moisture Level:</label>
+              <input type="range" class="sim-slider" id="soilMoistureSlider" min="5" max="95" value="42">
+            </div>
+            <div style="background: #111; padding: 14px; border-radius: 6px; font-family: var(--font-mono); font-size: 13px;">
+              <div>ADC Voltage: <span id="soilAdc" style="color: #00b4d8; font-weight: 700;">2.10 V (ADC: 430)</span></div>
+              <div style="margin-top: 6px;">Solenoid Valve Relay: <span id="valveStatus" style="color: #46D369; font-weight: 700;">VALVE CLOSED (Soil Moisture Adequate)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. JavaScript Learning Journey Deep Dive -->
+        <div class="modal-view" id="modal-js" style="display: none;">
+          <h4 style="font-size: 18px; margin-bottom: 10px; color: #fff;">JavaScript Learning Journey — Season 1</h4>
+          <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+            A structured daily code repo mastering modern ECMAScript standards: asynchronous mechanics, closures, event loop, Promises, Fetch API, and DOM manipulation.
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 16px;">
+            <div style="background: #111; padding: 12px; border-radius: 6px; border-left: 3px solid #f7df1e;">
+              <strong style="color: #f7df1e; font-size: 13px;">Async Mastery</strong>
+              <p style="font-size: 12px; color: #bbb; margin-top: 4px;">Event loop, microtasks, async/await error boundaries.</p>
+            </div>
+            <div style="background: #111; padding: 12px; border-radius: 6px; border-left: 3px solid #f7df1e;">
+              <strong style="color: #f7df1e; font-size: 13px;">DOM Architecture</strong>
+              <p style="font-size: 12px; color: #bbb; margin-top: 4px;">Custom event dispatchers, Web Audio API synthesis.</p>
+            </div>
+          </div>
+          <a href="https://github.com/tejasbargat16-ux/JavaScript-Learning-Journey" target="_blank" rel="noopener" class="btn-primary" style="font-size: 14px; padding: 8px 18px; display: inline-flex;">
+            Explore Repository on GitHub
+          </a>
+        </div>
+
+        <!-- 9. Java Learning Journey Deep Dive -->
+        <div class="modal-view" id="modal-java" style="display: none;">
+          <h4 style="font-size: 18px; margin-bottom: 10px; color: #fff;">Java Learning Journey — Season 1</h4>
+          <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+            Core object-oriented design and algorithm foundation in Java 17+. Covers polymorphism, encapsulation, Collections Framework, multithreading, and time-space efficiency.
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 16px;">
+            <div style="background: #111; padding: 12px; border-radius: 6px; border-left: 3px solid #e76f51;">
+              <strong style="color: #e76f51; font-size: 13px;">OOP Principles</strong>
+              <p style="font-size: 12px; color: #bbb; margin-top: 4px;">Abstract classes, interfaces, composition & design patterns.</p>
+            </div>
+            <div style="background: #111; padding: 12px; border-radius: 6px; border-left: 3px solid #e76f51;">
+              <strong style="color: #e76f51; font-size: 13px;">Collections & Concurrency</strong>
+              <p style="font-size: 12px; color: #bbb; margin-top: 4px;">HashMaps, LinkedLists, Thread synchronization & Executors.</p>
+            </div>
+          </div>
+          <a href="https://github.com/tejasbargat16-ux/Java-Learning-Journey" target="_blank" rel="noopener" class="btn-primary" style="font-size: 14px; padding: 8px 18px; display: inline-flex;">
+            Explore Repository on GitHub
+          </a>
+        </div>
+
+        <!-- 10. Flask LLM Gateway Architecture -->
+        <div class="modal-view" id="modal-api" style="display: none;">
+          <h4 style="font-size: 18px; margin-bottom: 10px; color: #fff;">Micro-Flask LLM API Gateway Architecture</h4>
+          <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+            High-efficiency REST microservice handling dynamic payload routing, multi-model fallback, rate limiting, and SQLite query persistence.
+          </p>
+          <div style="background: #111; padding: 14px; border-radius: 6px; font-family: var(--font-mono); font-size: 12px; color: #46D369; margin-bottom: 16px; overflow-x: auto;">
+POST /api/v1/chat/route HTTP/1.1<br>
+Authorization: Bearer [REDACTED]<br>
+Content-Type: application/json<br>
+{<br>
+&nbsp;&nbsp;"prompt": "Optimize 8051 ISR routine",<br>
+&nbsp;&nbsp;"target_models": ["claude-3-5", "gpt-4o", "groq-llama3"]<br>
+}
+          </div>
+        </div>
+
+        <!-- 11. 8051 Stopwatch & Timer Details -->
+        <div class="modal-view" id="modal-counter" style="display: none;">
+          <h4 style="font-size: 18px; margin-bottom: 10px; color: #fff;">8051 Multi-Function Digital Stopwatch</h4>
+          <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+            Hardware interrupt-driven digital timer and frequency counter built on the AT89C51 microcontroller with Timer 0/1 configured in Mode 2 (8-bit auto-reload) for sub-millisecond precision.
+          </p>
+          <div style="background: #111; padding: 14px; border-radius: 6px; font-family: var(--font-mono); font-size: 12px; color: #FFD700;">
+            Features: Multiplexed 7-segment display control (Port 1), external interrupts INT0/INT1 for start/stop/reset, and crystal oscillator frequency calibration (11.0592 MHz).
+          </div>
+        </div>
+
+        <!-- 12. Mobile DevOps Toolchain -->
+        <div class="modal-view" id="modal-dotfiles" style="display: none;">
+          <h4 style="font-size: 18px; margin-bottom: 10px; color: #fff;">Android Termux DevOps Toolchain</h4>
+          <p style="color: var(--text-muted); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+            Turnkey developer dotfiles optimized for ARM64 mobile terminal efficiency. Includes customized bash prompts with Git branch indicators, battery-aware background tasks, and SSH key management.
+          </p>
+          <div style="background: #111; padding: 14px; border-radius: 6px; font-family: var(--font-mono); font-size: 12px; color: #58a6ff;">
+            Key Tools: NeoVim / Micro Editor · OpenSSH · Termux:API (Battery & Storage hooks) · Pre-commit linting & commit signing.
+          </div>
         </div>
       </div>
     </div>

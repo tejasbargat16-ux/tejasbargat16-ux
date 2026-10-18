@@ -1289,3 +1289,20 @@ body {
     height: 140px;
   }
 }
+
+/* Search Empty State */
+.search-empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  margin-top: 24px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

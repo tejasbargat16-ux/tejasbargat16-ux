@@ -29,12 +29,12 @@ jobs:
           GH_USERNAME: ${{ github.repository_owner }}
         run: node scripts/fetch-contributions.mjs
 
-      - name: Render heatmap SVG
-        run: node scripts/build-heatmap-svg.mjs
+      - name: Render heatmap SVG & sync assets
+        run: node generate.mjs
 
       - name: Commit if changed
         run: |
-          git add site/data/contributions.json assets/contribution-snake.svg
+          git add site/data/contributions.json assets/contribution-snake.svg site/assets/contribution-snake.svg
           if git diff --cached --quiet; then
             echo "No changes."
             exit 0
