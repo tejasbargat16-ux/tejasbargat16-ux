@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 540" width="380" height="540" role="img" aria-label="Top 2: Water Tank Monitor">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="c2-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#16080b" />
+      <stop offset="35%" stop-color="#141414" />
+      <stop offset="70%" stop-color="#0c0e12" />
+      <stop offset="100%" stop-color="#050505" />
+    </linearGradient>
+
+    <!-- Cyan/Blue-Red Spotlight for IoT/Water -->
+    <radialGradient id="c2-glow" cx="60%" cy="32%" r="55%">
+      <stop offset="0%" stop-color="#00D9FF" stop-opacity="0.3" />
+      <stop offset="40%" stop-color="#E50914" stop-opacity="0.25" />
+      <stop offset="80%" stop-color="#141414" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="c2-vignette" x1="0%" y1="40%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="num-stroke2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#888888" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#222222" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  </style>
+
+  <!-- Base Card Frame -->
+  <rect width="380" height="540" rx="16" fill="url(#c2-bg)" />
+  <rect width="380" height="540" rx="16" fill="url(#c2-glow)" />
+  <rect x="1" y="1" width="378" height="538" rx="15" fill="none" stroke="#E50914" stroke-opacity="0.3" stroke-width="1.5" />
+
+  <!-- Top Badges Row -->
+  <g transform="translate(20, 20)">
+    <!-- Red N Icon -->
+    <rect width="22" height="28" rx="3" fill="#E50914" />
+    <path d="M 5 6 L 5 22 M 17 6 L 17 22 M 5 6 L 17 22" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- TOP 10 Badge -->
+    <g transform="translate(30, 0)">
+      <rect width="78" height="20" rx="3" fill="#E50914" />
+      <text class="font-sans" x="39" y="14" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">TOP 10</text>
+    </g>
+
+    <!-- 98% Match Badge -->
+    <g transform="translate(250, 0)">
+      <rect width="90" height="20" rx="3" fill="#222222" stroke="#333333" stroke-width="1" />
+      <text class="font-sans" x="45" y="14" font-size="11" font-weight="800" fill="#46d369" text-anchor="middle">98% MATCH</text>
+    </g>
+  </g>
+
+  <!-- Giant Netflix-Styled Rank Number "2" -->
+  <g transform="translate(14, 150)">
+    <text class="font-sans" x="0" y="160" font-size="210" font-weight="900" fill="#141414" stroke="#444444" stroke-width="4" opacity="0.6">2</text>
+    <text class="font-sans" x="-3" y="157" font-size="210" font-weight="900" fill="#080808" stroke="url(#num-stroke2)" stroke-width="2.5">2</text>
+  </g>
+
+  <!-- Project Artwork: Dual Water Tank & Ultrasonic Sensor Telemetry -->
+  <g transform="translate(150, 85)">
+    <!-- Microcontroller Chip / Circuit Grid -->
+    <rect x="25" y="25" width="140" height="130" rx="10" fill="#0b171e" stroke="#00D9FF" stroke-opacity="0.3" stroke-width="1.5" />
+    
+    <!-- Dual Tank level visualization -->
+    <!-- Tank 1 -->
+    <rect x="42" y="45" width="45" height="90" rx="5" fill="#060c10" stroke="#00D9FF" stroke-width="1.2" />
+    <rect x="44" y="70" width="41" height="63" rx="3" fill="#00D9FF" fill-opacity="0.35" />
+    <text class="font-mono" x="64" y="62" font-size="9" fill="#00D9FF" text-anchor="middle">T1: 72%</text>
+
+    <!-- Tank 2 -->
+    <rect x="102" y="45" width="45" height="90" rx="5" fill="#060c10" stroke="#E50914" stroke-width="1.2" />
+    <rect x="104" y="90" width="41" height="43" rx="3" fill="#E50914" fill-opacity="0.4" />
+    <text class="font-mono" x="124" y="62" font-size="9" fill="#E50914" text-anchor="middle">T2: 48%</text>
+
+    <!-- Ultrasonic waves emitting -->
+    <path d="M 50 40 Q 64 30 78 40" fill="none" stroke="#00D9FF" stroke-width="1.5" stroke-linecap="round" />
+    <path d="M 44 34 Q 64 20 84 34" fill="none" stroke="#00D9FF" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.7" />
+    <path d="M 110 40 Q 124 30 138 40" fill="none" stroke="#E50914" stroke-width="1.5" stroke-linecap="round" />
+    <path d="M 104 34 Q 124 20 144 34" fill="none" stroke="#E50914" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.7" />
+
+    <!-- Status Telemetry Bar -->
+    <g transform="translate(15, 170)">
+      <rect width="160" height="28" rx="5" fill="#0a0a0a" stroke="#222" stroke-width="1" />
+      <circle cx="16" cy="14" r="4" fill="#46d369" />
+      <text class="font-mono" x="28" y="18" font-size="9.5" fill="#e5e5e5">HC-SR04: PING ACTIVE</text>
+    </g>
+  </g>
+
+  <!-- Vignette overlay for text legibility -->
+  <rect y="240" width="380" height="300" rx="16" fill="url(#c2-vignette)" />
+
+  <!-- Content & Metadata at Bottom -->
+  <g transform="translate(24, 380)">
+    <text class="font-sans" x="0" y="0" font-size="11" font-weight="800" letter-spacing="2" fill="#E50914">MOST WATCHED · EMBEDDED IoT</text>
+    <text class="font-sans" x="0" y="32" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="0.5">Water Tank Monitor</text>
+    <text class="font-sans" x="0" y="58" font-size="12.5" font-weight="400" fill="#cccccc">
+      Autonomous dual-tank depth telemetry using
+    </text>
+    <text class="font-sans" x="0" y="76" font-size="12.5" font-weight="400" fill="#cccccc">
+      HC-SR04 sonar sensors, LED &amp; buzzer alerts.
+    </text>
+
+    <!-- Tags Row -->
+    <g transform="translate(0, 96)">
+      <g>
+        <rect width="66" height="22" rx="4" fill="#222" stroke="#333" stroke-width="1" />
+        <text class="font-sans" x="33" y="15" font-size="10.5" font-weight="700" fill="#e5e5e5" text-anchor="middle">Arduino</text>
+      </g>
+      <g transform="translate(72, 0)">
+        <rect width="66" height="22" rx="4" fill="#222" stroke="#333" stroke-width="1" />
+        <text class="font-sans" x="33" y="15" font-size="10.5" font-weight="700" fill="#e5e5e5" text-anchor="middle">HC-SR04</text>
+      </g>
+      <g transform="translate(144, 0)">
+        <rect width="48" height="22" rx="4" fill="#222" stroke="#333" stroke-width="1" />
+        <text class="font-sans" x="24" y="15" font-size="10.5" font-weight="700" fill="#e5e5e5" text-anchor="middle">C/C++</text>
+      </g>
+      <g transform="translate(198, 0)">
+        <rect width="52" height="22" rx="4" fill="#222" stroke="#333" stroke-width="1" />
+        <text class="font-sans" x="26" y="15" font-size="10.5" font-weight="700" fill="#e5e5e5" text-anchor="middle">Sensors</text>
+      </g>
+      <g transform="translate(256, 0)">
+        <rect width="32" height="22" rx="4" fill="#E50914" />
+        <path d="M 12 6 L 22 11 L 12 16 Z" fill="#ffffff" />
+      </g>
+    </g>
+  </g>
+</svg>

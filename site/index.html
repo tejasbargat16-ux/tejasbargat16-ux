@@ -23,6 +23,15 @@
 </head>
 <body>
 
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgressBar"></div>
+
+  <!-- Netflix Splash Intro -->
+  <div id="tejasflixSplash">
+    <div class="splash-logo">TEJASFLIX</div>
+    <div class="splash-bar"></div>
+  </div>
+
   <!-- Netflix Navbar -->
   <nav class="netflix-nav" id="mainNav">
     <div class="nav-left">
@@ -65,6 +74,9 @@
 
   <!-- Hero Billboard -->
   <header class="billboard" id="home">
+    <!-- Floating Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
     <!-- SVG Circuit Background Art -->
     <img src="assets/hero.svg" alt="Circuit background" class="billboard-bg-svg">
 
@@ -114,13 +126,13 @@
 
   <!-- Section 1: Top 10 Projects in Tech Today -->
   <section class="content-section" id="projects">
-    <div class="section-header">
+    <div class="section-header reveal-left">
       <div class="section-bar"></div>
       <h2 class="section-title">Top 10 Projects by Tejas Today</h2>
-      <span class="section-subtitle">Trending in Embedded, AI & Web</span>
+      <span class="section-subtitle">Trending in Embedded, AI &amp; Web</span>
     </div>
 
-    <div class="top10-grid">
+    <div class="top10-grid reveal-stagger">
       <!-- Project 1: NexusChat -->
       <article class="top10-card" onclick="openModal('nexus')">
         <div class="top10-poster-wrap">
@@ -463,7 +475,7 @@
 
   <!-- Section 2: Episodes — Season 1: The Tejas Story -->
   <section class="content-section" id="episodes">
-    <div class="section-header">
+    <div class="section-header reveal-left">
       <div class="section-bar"></div>
       <h2 class="section-title">About — Season 1</h2>
       <span class="section-subtitle">4 Episodes Available to Stream</span>
@@ -538,14 +550,14 @@
 
   <!-- Section 3: Because You Watched: Engineering (The Toolkit) -->
   <section class="content-section" id="toolkit">
-    <div class="section-header">
+    <div class="section-header reveal-left">
       <div class="section-bar"></div>
       <h2 class="section-title">Because You Watched: Engineering</h2>
       <span class="section-subtitle">Skills, Languages & Technologies</span>
     </div>
 
     <!-- Category filter tabs -->
-    <div class="toolkit-tabs">
+    <div class="toolkit-tabs reveal">
       <button class="toolkit-tab-btn active" data-cat="all">All Tech</button>
       <button class="toolkit-tab-btn" data-cat="lang">Languages</button>
       <button class="toolkit-tab-btn" data-cat="hardware">Hardware & IoT</button>
@@ -553,7 +565,7 @@
       <button class="toolkit-tab-btn" data-cat="tools">Tools & DevOps</button>
     </div>
 
-    <div class="toolkit-grid">
+    <div class="toolkit-grid reveal-stagger">
       <!-- Languages -->
       <div class="tech-card" data-cat="lang">
         <div class="tech-cat">Language</div>
@@ -631,13 +643,13 @@
 
   <!-- Section 4: Continue Watching (Learning Journey) -->
   <section class="content-section" id="journey">
-    <div class="section-header">
+    <div class="section-header reveal-left">
       <div class="section-bar"></div>
       <h2 class="section-title">Continue Watching</h2>
       <span class="section-subtitle">Skill Progression & Milestones</span>
     </div>
 
-    <div class="journey-grid">
+    <div class="journey-grid reveal-stagger">
       <div class="journey-card">
         <div class="journey-thumb">
           <div class="journey-play-icon">✓</div>
@@ -720,13 +732,13 @@
 
   <!-- Section 5: Trending Now: Commit Log (Live GitHub Heatmap) -->
   <section class="content-section" id="heatmap">
-    <div class="section-header">
+    <div class="section-header reveal-left">
       <div class="section-bar"></div>
       <h2 class="section-title">Trending Now: My Commit Log</h2>
       <span class="section-subtitle">Real Public GitHub Activity · Refreshed Daily</span>
     </div>
 
-    <div class="heatmap-container">
+    <div class="heatmap-container reveal-scale">
       <div class="heatmap-stats-banner">
         <div class="hm-stat-item">
           <span class="hm-stat-label">Contributions</span>
@@ -763,13 +775,13 @@
 
   <!-- Section 6: Cyberpunk Visual Banner Feature -->
   <section class="content-section">
-    <div class="section-header">
+    <div class="section-header reveal-left">
       <div class="section-bar"></div>
       <h2 class="section-title">Engineering Visual Blueprint</h2>
       <span class="section-subtitle">System Architecture &amp; Vision</span>
     </div>
 
-    <div class="cyber-banner-wrap" onclick="openModal('banner')">
+    <div class="cyber-banner-wrap reveal-scale" onclick="openModal('banner')">
       <img src="assets/tejas-cyber-banner.png" alt="Tejas Bargat Cyberpunk Architecture Infographic" class="cyber-banner-img">
       <div class="cyber-overlay">
         <div>
@@ -823,7 +835,7 @@
 
       <div class="modal-body">
         <!-- 1. NEXUS Chat Terminal Simulator -->
-        <div class="modal-view" id="modal-nexus">
+        <div class="modal-view" id="modal-nexus" style="display: none;">
           <p style="margin-bottom: 12px; font-size: 14px; color: var(--text-muted);">
             Interactive live simulation of <strong>NEXUS Chat</strong>. Type queries to test the multi-provider routing engine:
           </p>

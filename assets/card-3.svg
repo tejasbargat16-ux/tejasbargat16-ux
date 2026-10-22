@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 540" width="380" height="540" role="img" aria-label="Top 3: Tejas 2.0 Portfolio">
+  <defs>
+    <linearGradient id="c3-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#180708" />
+      <stop offset="35%" stop-color="#141414" />
+      <stop offset="70%" stop-color="#111111" />
+      <stop offset="100%" stop-color="#050505" />
+    </linearGradient>
+
+    <!-- Magenta/Red Spotlight -->
+    <radialGradient id="c3-glow" cx="60%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#E50914" stop-opacity="0.38" />
+      <stop offset="60%" stop-color="#ff1e42" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#141414" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="c3-vignette" x1="0%" y1="40%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="num-stroke3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#888888" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#222222" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  </style>
+
+  <!-- Base Card Frame -->
+  <rect width="380" height="540" rx="16" fill="url(#c3-bg)" />
+  <rect width="380" height="540" rx="16" fill="url(#c3-glow)" />
+  <rect x="1" y="1" width="378" height="538" rx="15" fill="none" stroke="#E50914" stroke-opacity="0.3" stroke-width="1.5" />
+
+  <!-- Top Badges Row -->
+  <g transform="translate(20, 20)">
+    <!-- Red N Icon -->
+    <rect width="22" height="28" rx="3" fill="#E50914" />
+    <path d="M 5 6 L 5 22 M 17 6 L 17 22 M 5 6 L 17 22" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- TOP 10 Badge -->
+    <g transform="translate(30, 0)">
+      <rect width="78" height="20" rx="3" fill="#E50914" />
+      <text class="font-sans" x="39" y="14" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">TOP 10</text>
+    </g>
+
+    <!-- 97% Match Badge -->
+    <g transform="translate(250, 0)">
+      <rect width="90" height="20" rx="3" fill="#222222" stroke="#333333" stroke-width="1" />
+      <text class="font-sans" x="45" y="14" font-size="11" font-weight="800" fill="#46d369" text-anchor="middle">97% MATCH</text>
+    </g>
+  </g>
+
+  <!-- Giant Netflix-Styled Rank Number "3" -->
+  <g transform="translate(14, 150)">
+    <text class="font-sans" x="0" y="160" font-size="210" font-weight="900" fill="#141414" stroke="#444444" stroke-width="4" opacity="0.6">3</text>
+    <text class="font-sans" x="-3" y="157" font-size="210" font-weight="900" fill="#080808" stroke="url(#num-stroke3)" stroke-width="2.5">3</text>
+  </g>
+
+  <!-- Project Artwork: Sleek Browser Frame & Cyber UI Elements -->
+  <g transform="translate(155, 85)">
+    <!-- Browser Mockup Window -->
+    <rect x="15" y="25" width="165" height="135" rx="8" fill="#121212" stroke="#333" stroke-width="1.2" />
+    <!-- Window Bar -->
+    <rect x="15" y="25" width="165" height="20" rx="8" fill="#1f1f1f" />
+    <circle cx="28" cy="35" r="3" fill="#E50914" />
+    <circle cx="38" cy="35" r="3" fill="#ffb400" />
+    <circle cx="48" cy="35" r="3" fill="#46d369" />
+    <rect x="62" y="30" width="70" height="10" rx="4" fill="#2d2d2d" />
+
+    <!-- Window Body Layout -->
+    <!-- Hero Block with Glow -->
+    <rect x="25" y="55" width="145" height="34" rx="5" fill="#1e1e1e" stroke="#E50914" stroke-opacity="0.4" stroke-width="1" />
+    <text class="font-sans" x="35" y="75" font-size="11" font-weight="800" fill="#ffffff">TEJAS 2.0</text>
+    <circle cx="152" cy="72" r="5" fill="#E50914" />
+
+    <!-- Grid Cards inside Window -->
+    <rect x="25" y="96" width="68" height="52" rx="4" fill="#181818" stroke="#2a2a2a" stroke-width="1" />
+    <circle cx="40" cy="112" r="6" fill="#E50914" fill-opacity="0.5" />
+    <rect x="52" y="108" width="32" height="6" rx="2" fill="#444" />
+    <rect x="35" y="126" width="48" height="5" rx="2" fill="#333" />
+    <rect x="35" y="136" width="34" height="4" rx="2" fill="#262626" />
+
+    <rect x="101" y="96" width="69" height="52" rx="4" fill="#181818" stroke="#2a2a2a" stroke-width="1" />
+    <circle cx="116" cy="112" r="6" fill="#00D9FF" fill-opacity="0.5" />
+    <rect x="128" y="108" width="32" height="6" rx="2" fill="#444" />
+    <rect x="111" y="126" width="48" height="5" rx="2" fill="#333" />
+    <rect x="111" y="136" width="34" height="4" rx="2" fill="#262626" />
+
+    <!-- Floating UI Badge -->
+    <g transform="translate(20, 172)">
+      <rect width="150" height="26" rx="5" fill="#0c0c0c" stroke="#E50914" stroke-opacity="0.5" stroke-width="1" />
+      <text class="font-sans" x="75" y="17" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">★ CRITICS CHOICE 2026</text>
+    </g>
+  </g>
+
+  <!-- Vignette overlay for text legibility -->
+  <rect y="240" width="380" height="300" rx="16" fill="url(#c3-vignette)" />
+
+  <!-- Content & Metadata at Bottom -->
+  <g transform="translate(24, 380)">
+    <text class="font-sans" x="0" y="0" font-size="11" font-weight="800" letter-spacing="2" fill="#E50914">TRENDING #3 · WEB &amp; UX</text>
+    <text class="font-sans" x="0" y="32" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="0.5">Tejas 2.0 Portfolio</text>
+    <text class="font-sans" x="0" y="58" font-size="12.5" font-weight="400" fill="#cccccc">
+      Interactive showcase engineered with next-gen
+    </text>
+    <text class="font-sans" x="0" y="76" font-size="12.5" font-weight="400" fill="#cccccc">
+      visual aesthetics, fluid motion &amp; responsive UX.
+    </text>
+
+    <!-- Tags Row -->
+    <g transform="translate(0, 96)">
+      <g>
+        <rect width="66" height="22" rx="4" fill="#222" stroke="#333" stroke-width="1" />
+        <text class="font-sans" x="33" y="15" font-size="10.5" font-weight="700" fill="#e5e5e5" text-anchor="middle">Vanilla CSS</text>
+      </g>
+      <g transform="translate(72, 0)">
+        <rect width="48" height="22" rx="4" fill="#222" stroke="#333" stroke-width="1" />
+        <text class="font-sans" x="24" y="15" font-size="10.5" font-weight="700" fill="#e5e5e5" text-anchor="middle">HTML5</text>
+      </g>
+      <g transform="translate(126, 0)">
+        <rect width="48" height="22" rx="4" fill="#222" stroke="#333" stroke-width="1" />
+        <text class="font-sans" x="24" y="15" font-size="10.5" font-weight="700" fill="#e5e5e5" text-anchor="middle">JS (ES6)</text>
+      </g>
+      <g transform="translate(180, 0)">
+        <rect width="68" height="22" rx="4" fill="#222" stroke="#333" stroke-width="1" />
+        <text class="font-sans" x="34" y="15" font-size="10.5" font-weight="700" fill="#e5e5e5" text-anchor="middle">UI Design</text>
+      </g>
+      <g transform="translate(254, 0)">
+        <rect width="32" height="22" rx="4" fill="#E50914" />
+        <path d="M 12 6 L 22 11 L 12 16 Z" fill="#ffffff" />
+      </g>
+    </g>
+  </g>
+</svg>

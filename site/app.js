@@ -147,6 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadContributionData();
   setupSimulators();
   setupSoundHooks();
+  setupAnimations();
 });
 
 // Sound hooks for interactive elements
@@ -184,7 +185,8 @@ function setupNavbar() {
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
   if (menuToggle && navLinks) {
-    menuToggle.addEventListener("click", () => {
+    menuToggle.addEventListener("click", (e) => {
+      e.stopPropagation();
       const isVisible = navLinks.style.display === "flex";
       navLinks.style.display = isVisible ? "none" : "flex";
       if (!isVisible) {
@@ -197,6 +199,20 @@ function setupNavbar() {
         navLinks.style.padding = "20px 4%";
         navLinks.style.borderBottom = "1px solid rgba(255,255,255,0.1)";
       }
+    });
+
+    // Close mobile menu when clicking outside the nav
+    document.addEventListener("click", (e) => {
+      if (!nav.contains(e.target) && navLinks.style.display === "flex") {
+        navLinks.style.display = "none";
+      }
+    });
+
+    // Close mobile menu when a nav link is clicked
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.style.display = "none";
+      });
     });
   }
 }
@@ -312,7 +328,7 @@ async function loadContributionData() {
     const streakEl = document.getElementById("statLongestStreak");
     const peakEl = document.getElementById("statPeakDay");
 
-    if (totalEl) totalEl.textContent = (total || 114).toLocaleString();
+    if (totalEl) totalEl.textContent = total.toLocaleString();
     if (activeEl) activeEl.textContent = `${active} / ${days.length || 371}`;
     if (streakEl) streakEl.textContent = `${longestStreak} days`;
     if (peakEl && peakDay.date) {
@@ -571,3 +587,241 @@ function setupSimulators() {
   }
 }
 
+// ==========================================================================
+// 6. Animation Engine - Scroll Reveal, Splash, Particles & Counters
+// ==========================================================================
+function setupAnimations() {
+  // Splash Screen
+  const splash = document.getElementById("tejasflixSplash");
+  if (splash) {
+    document.body.style.overflow = "hidden";
+    setTimeout(() => {
+      splash.classList.add("splash-exit");
+      setTimeout(() => {
+        splash.style.display = "none";
+        document.body.style.overflow = "";
+      }, 500);
+    }, 2200);
+  }
+
+  // Scroll Progress Bar
+  const progressBar = document.getElementById("scrollProgressBar");
+  if (progressBar) {
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressBar.style.width = pct + "%";
+    }, { passive: true });
+  }
+
+  // IntersectionObserver: Reveal, Left, Scale, Stagger
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        const bar = entry.target.querySelector(".section-bar");
+        if (bar) bar.classList.add("animate-bar");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll(".reveal, .reveal-left, .reveal-scale, .reveal-stagger").forEach((el) => {
+    revealObserver.observe(el);
+  });
+
+  // Episode Rows Stagger Reveal
+  const epObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const rows = entry.target.querySelectorAll(".episode-row");
+        rows.forEach((row, i) => {
+          setTimeout(() => row.classList.add("ep-visible"), i * 120);
+        });
+        epObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  const epList = document.querySelector(".episodes-list");
+  if (epList) epObserver.observe(epList);
+
+  // Heatmap Stats Stagger + Counter
+  const hmObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        entry.target.querySelectorAll(".hm-stat-value").forEach((el, i) => {
+          const finalText = el.textContent.trim();
+          const numMatch = finalText.match(/[\d.,]+/);
+          if (numMatch) {
+            const num = parseFloat(numMatch[0].replace(/,/g, ""));
+            if (!isNaN(num) && num > 0) {
+              setTimeout(() => animateCounter(el, 0, num, finalText, 1100), i * 200);
+            }
+          }
+        });
+        hmObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  const hmBanner = document.querySelector(".heatmap-stats-banner");
+  if (hmBanner) hmObserver.observe(hmBanner);
+
+  // Journey Progress Bars Animate on Reveal
+  const jpObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll(".journey-progress-fill").forEach((fill) => {
+          const target = fill.style.width;
+          fill.style.width = "0";
+          requestAnimationFrame(() => {
+            requestAnimationFrame(() => { fill.style.width = target; });
+          });
+        });
+        jpObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  const jGrid = document.querySelector(".journey-grid");
+  if (jGrid) jpObserver.observe(jGrid);
+
+  // Footer Quote Typewriter
+  const footerObs = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("type-animate");
+        footerObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  const footerQuote = document.querySelector(".footer-quote");
+  if (footerQuote) footerObs.observe(footerQuote);
+
+  // Particle Canvas (Hero)
+  setupParticles();
+
+  // Toolkit Tab Pop on Click
+  document.querySelectorAll(".toolkit-tab-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.classList.remove("active");
+      void btn.offsetWidth;
+      btn.classList.add("active");
+    });
+  });
+}
+
+// Helper: animated number counter roll-up
+function animateCounter(el, from, to, originalText, duration) {
+  const prefix = originalText.match(/^[^\d]*/)[0] || "";
+  const suffix = originalText.replace(/^[^\d]*[\d.,]+/, "").trim();
+  const isFloat = String(to).includes(".");
+  const start = performance.now();
+
+  el.classList.add("counting");
+  setTimeout(() => el.classList.remove("counting"), 400);
+
+  function tick(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    const ease = 1 - Math.pow(1 - progress, 5);
+    const value = from + (to - from) * ease;
+    const display = isFloat ? value.toFixed(1) : Math.round(value).toLocaleString();
+    el.textContent = prefix + display + (suffix ? " " + suffix : "");
+    if (progress < 1) requestAnimationFrame(tick);
+    else el.textContent = originalText;
+  }
+  requestAnimationFrame(tick);
+}
+
+// Floating particles for the hero section
+function setupParticles() {
+  const canvas = document.getElementById("particleCanvas");
+  if (!canvas) return;
+  const ctx = canvas.getContext("2d");
+  const hero = canvas.parentElement;
+  let W, H;
+  const PARTICLE_COUNT = 55;
+  const particles = [];
+
+  function resize() {
+    W = canvas.width = hero.offsetWidth;
+    H = canvas.height = hero.offsetHeight;
+  }
+  resize();
+  window.addEventListener("resize", resize, { passive: true });
+
+  function Particle() {
+    this.reset = function(initial) {
+      this.x = Math.random() * W;
+      this.y = initial ? Math.random() * H : H + 10;
+      this.size = 1 + Math.random() * 2.5;
+      this.speedY = -(0.18 + Math.random() * 0.45);
+      this.speedX = (Math.random() - 0.5) * 0.25;
+      this.opacity = 0.1 + Math.random() * 0.5;
+      this.type = Math.random() < 0.6 ? "dot" : Math.random() < 0.5 ? "cross" : "diamond";
+      this.color = Math.random() < 0.6 ? "229,9,20" : "255,255,255";
+      this.pulse = Math.random() * Math.PI * 2;
+    };
+    this.update = function() {
+      this.x += this.speedX;
+      this.y += this.speedY;
+      this.pulse += 0.025;
+      this.opacity = 0.15 + Math.abs(Math.sin(this.pulse)) * 0.45;
+      if (this.y < -10) this.reset(false);
+    };
+    this.draw = function() {
+      ctx.save();
+      ctx.globalAlpha = this.opacity;
+      ctx.fillStyle = "rgba(" + this.color + ",1)";
+      ctx.strokeStyle = "rgba(" + this.color + ",0.8)";
+      ctx.lineWidth = 1;
+      if (this.type === "dot") {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      } else if (this.type === "cross") {
+        const s = this.size * 2.5;
+        ctx.beginPath();
+        ctx.moveTo(this.x - s, this.y); ctx.lineTo(this.x + s, this.y);
+        ctx.moveTo(this.x, this.y - s); ctx.lineTo(this.x, this.y + s);
+        ctx.stroke();
+      } else {
+        const s = this.size * 2;
+        ctx.beginPath();
+        ctx.moveTo(this.x, this.y - s);
+        ctx.lineTo(this.x + s, this.y);
+        ctx.lineTo(this.x, this.y + s);
+        ctx.lineTo(this.x - s, this.y);
+        ctx.closePath();
+        ctx.fill();
+      }
+      ctx.restore();
+    };
+    this.reset(true);
+  }
+
+  for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(new Particle());
+
+  let animId = null;
+  function loop() {
+    ctx.clearRect(0, 0, W, H);
+    particles.forEach((p) => { p.update(); p.draw(); });
+    animId = requestAnimationFrame(loop);
+  }
+  loop();
+
+  const heroObs = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      if (!animId) loop();
+    } else {
+      cancelAnimationFrame(animId);
+      animId = null;
+    }
+  });
+  heroObs.observe(hero);
+}

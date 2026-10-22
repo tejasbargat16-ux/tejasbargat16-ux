@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Lightweight local development server for the Netflix-themed portfolio.
- * Serves static files from the project root and site/ directory with
+ * Serves the production static files from site/ with
  * full MIME-type resolution, caching headers, and automatic port fallback.
  * Zero npm dependencies required.
  */
@@ -13,8 +13,7 @@ import { fileURLToPath } from "node:url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const ROOT_DIR = path.resolve(__dirname, "..");
-const SITE_DIR = path.resolve(ROOT_DIR, "site");
+const SITE_DIR = path.resolve(__dirname, "..", "site");
 
 const MIME_TYPES = {
   ".html": "text/html; charset=utf-8",
@@ -36,36 +35,42 @@ const MIME_TYPES = {
 };
 
 function resolvePath(urlPath) {
-  const cleanUrl = urlPath.split("?")[0].split("#")[0];
-  const decoded = decodeURIComponent(cleanUrl);
-
-  // Normalize path
-  let relativePath = decoded.replace(/^\/+/, "");
-  if (!relativePath || relativePath === "") {
-    relativePath = "index.html";
+  let pathname;
+  try {
+    pathname = new URL(urlPath, "http://localhost").pathname;
+  } catch {
+    return null;
   }
 
-  // Check in site/ first, then in project root
-  const candidates = [
-    path.join(SITE_DIR, relativePath),
-    path.join(ROOT_DIR, relativePath),
-  ];
+  let relativePath;
+  try {
+    relativePath = decodeURIComponent(pathname).replace(/^\/+/, "");
+  } catch {
+    return null;
+  }
 
+  const requestedFile = path.resolve(SITE_DIR, relativePath || "index.html");
+  if (
+    requestedFile.startsWith(`${SITE_DIR}${path.sep}`) &&
+    fs.existsSync(requestedFile) &&
+    fs.statSync(requestedFile).isFile()
+  ) {
+    return requestedFile;
+  }
+
+  // Only extensionless routes are application routes. Missing files must stay
+  // missing so browsers do not receive HTML in place of CSS, JS, or images.
   if (!path.extname(relativePath)) {
-    candidates.unshift(path.join(SITE_DIR, relativePath, "index.html"));
-    candidates.push(path.join(ROOT_DIR, relativePath, "index.html"));
-  }
-
-  for (const candidate of candidates) {
-    if (fs.existsSync(candidate) && fs.statSync(candidate).isFile()) {
-      return candidate;
+    const routeIndex = path.resolve(SITE_DIR, relativePath, "index.html");
+    if (
+      routeIndex.startsWith(`${SITE_DIR}${path.sep}`) &&
+      fs.existsSync(routeIndex) &&
+      fs.statSync(routeIndex).isFile()
+    ) {
+      return routeIndex;
     }
-  }
 
-  // Fallback to site/index.html for SPA routes
-  const siteIndex = path.join(SITE_DIR, "index.html");
-  if (fs.existsSync(siteIndex)) {
-    return siteIndex;
+    return path.join(SITE_DIR, "index.html");
   }
 
   return null;
@@ -100,23 +105,24 @@ const server = http.createServer((req, res) => {
 });
 
 const DEFAULT_PORT = parseInt(process.env.PORT || "3000", 10);
+let currentPort = DEFAULT_PORT;
 
-function startServer(port) {
-  server.listen(port, () => {
-    console.log(`\n🍿 [TEJASFLIX] Netflix Portfolio Dev Server running at:`);
-    console.log(`   ➜ Local:   http://localhost:${port}/`);
-    console.log(`   ➜ Assets:  http://localhost:${port}/assets/`);
-    console.log(`   ➜ Press Ctrl+C to stop.\n`);
-  });
+// Register the error handler once to avoid listener accumulation when
+// retrying ports (previous implementation added a new listener per retry,
+// eventually triggering MaxListenersExceededWarning).
+server.on("error", (err) => {
+  if (err.code === "EADDRINUSE") {
+    console.warn(`Port ${currentPort} in use, trying ${currentPort + 1}...`);
+    currentPort += 1;
+    server.listen(currentPort);
+  } else {
+    console.error("Server error:", err);
+  }
+});
 
-  server.on("error", (err) => {
-    if (err.code === "EADDRINUSE") {
-      console.warn(`Port ${port} in use, trying ${port + 1}...`);
-      startServer(port + 1);
-    } else {
-      console.error("Server error:", err);
-    }
-  });
-}
-
-startServer(DEFAULT_PORT);
+server.listen(DEFAULT_PORT, () => {
+  console.log(`\n\uD83C\uDF7F [TEJASFLIX] Netflix Portfolio Dev Server running at:`);
+  console.log(`   \u279C Local:   http://localhost:${currentPort}/`);
+  console.log(`   \u279C Assets:  http://localhost:${currentPort}/assets/`);
+  console.log(`   \u279C Press Ctrl+C to stop.\n`);
+});

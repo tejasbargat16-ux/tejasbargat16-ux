@@ -33,6 +33,11 @@ if (fs.existsSync(heatmapScript)) {
 
 // Verify essential assets
 const requiredAssets = [
+  "assets/netflix-header.svg",
+  "assets/card-1.svg",
+  "assets/card-2.svg",
+  "assets/card-3.svg",
+  "assets/card-4.svg",
   "assets/hero.svg",
   "assets/about.svg",
   "assets/toolkit.svg",

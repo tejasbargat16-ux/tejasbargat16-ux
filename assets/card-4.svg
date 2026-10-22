@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 540" width="380" height="540" role="img" aria-label="Top 4: OSINT Toolkit">
+  <defs>
+    <linearGradient id="c4-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#190608" />
+      <stop offset="35%" stop-color="#141414" />
+      <stop offset="70%" stop-color="#0a0a0c" />
+      <stop offset="100%" stop-color="#050505" />
+    </linearGradient>
+
+    <!-- Amber-Red Cyber Glow -->
+    <radialGradient id="c4-glow" cx="60%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#E50914" stop-opacity="0.38" />
+      <stop offset="60%" stop-color="#ff3344" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#141414" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="c4-vignette" x1="0%" y1="40%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="num-stroke4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#888888" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#222222" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  </style>
+
+  <!-- Base Card Frame -->
+  <rect width="380" height="540" rx="16" fill="url(#c4-bg)" />
+  <rect width="380" height="540" rx="16" fill="url(#c4-glow)" />
+  <rect x="1" y="1" width="378" height="538" rx="15" fill="none" stroke="#E50914" stroke-opacity="0.3" stroke-width="1.5" />
+
+  <!-- Top Badges Row -->
+  <g transform="translate(20, 20)">
+    <!-- Red N Icon -->
+    <rect width="22" height="28" rx="3" fill="#E50914" />
+    <path d="M 5 6 L 5 22 M 17 6 L 17 22 M 5 6 L 17 22" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- TOP 10 Badge -->
+    <g transform="translate(30, 0)">
+      <rect width="78" height="20" rx="3" fill="#E50914" />
+      <text class="font-sans" x="39" y="14" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">TOP 10</text>
+    </g>
+
+    <!-- 96% Match Badge -->
+    <g transform="translate(250, 0)">
+      <rect width="90" height="20" rx="3" fill="#222222" stroke="#333333" stroke-width="1" />
+      <text class="font-sans" x="45" y="14" font-size="11" font-weight="800" fill="#46d369" text-anchor="middle">96% MATCH</text>
+    </g>
+  </g>
+
+  <!-- Giant Netflix-Styled Rank Number "4" -->
+  <g transform="translate(14, 150)">
+    <text class="font-sans" x="0" y="160" font-size="210" font-weight="900" fill="#141414" stroke="#444444" stroke-width="4" opacity="0.6">4</text>
+    <text class="font-sans" x="-3" y="157" font-size="210" font-weight="900" fill="#080808" stroke="url(#num-stroke4)" stroke-width="2.5">4</text>
+  </g>
+
+  <!-- Project Artwork: Cyber Radar HUD, Target Crosshairs & OSINT Matrix -->
+  <g transform="translate(160, 85)">
+    <!-- Radar Circle Container -->
+    <circle cx="85" cy="85" r="75" fill="#0c0d10" stroke="#E50914" stroke-opacity="0.3" stroke-width="1.5" />
+    <circle cx="85" cy="85" r="55" fill="none" stroke="#E50914" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="3 4" />
+    <circle cx="85" cy="85" r="30" fill="none" stroke="#E50914" stroke-opacity="0.4" stroke-width="1" />
+    
+    <!-- Crosshairs -->
+    <line x1="85" y1="5" x2="85" y2="165" stroke="#E50914" stroke-opacity="0.3" stroke-width="1" stroke-dasharray="2 3" />
+    <line x1="5" y1="85" x2="165" y2="85" stroke="#E50914" stroke-opacity="0.3" stroke-width="1" stroke-dasharray="2 3" />
+
+    <!-- Radar Sweep Beam (Pie slice) -->
+    <path d="M 85 85 L 140 30 A 75 75 0 0 1 160 85 Z" fill="#E50914" fill-opacity="0.15" />
+
+    <!-- Recon Targets Detected -->
+    <circle cx="120" cy="55" r="4.5" fill="#E50914" />
+    <circle cx="120" cy="55" r="9" fill="none" stroke="#E50914" stroke-width="1" stroke-dasharray="2 2" />
+    <circle cx="60" cy="115" r="3.5" fill="#46d369" />
+
+    <!-- Terminal Status Snippet -->
+    <g transform="translate(5, 172)">
+      <rect width="160" height="26" rx="5" fill="#080808" stroke="#333" stroke-width="1" />
+      <text class="font-mono" x="12" y="17" font-size="9.5" fill="#E50914">[TARGET] RECON ONLINE</text>
+    </g>
+  </g>
+
+  <!-- Vignette overlay for text legibility -->
+  <rect y="240" width="380" height="300" rx="16" fill="url(#c4-vignette)" />
+
+  <!-- Content & Metadata at Bottom -->
+  <g transform="translate(24, 380)">
+    <text class="font-sans" x="0" y="0" font-size="11" font-weight="800" letter-spacing="2" fill="#E50914">CYBER THRILLER · RECON</text>
+    <text class="font-sans" x="0" y="32" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="0.5">OSINT Toolkit</text>
+    <text class="font-sans" x="0" y="58" font-size="12.5" font-weight="400" fill="#cccccc">
+      Open-source intelligence gathering and
+    </text>
+    <text class="font-sans" x="0" y="76" font-size="12.5" font-weight="400" fill="#cccccc">
+      automated reconnaissance scanner suite.
+    </text>
+
+    <!-- Tags Row -->
+    <g transform="translate(0, 96)">
+      <g>
+        <rect width="56" height="22" rx="4" fill="#222" stroke="#333" stroke-width="1" />
+        <text class="font-sans" x="28" y="15" font-size="10.5" font-weight="700" fill="#e5e5e5" text-anchor="middle">Python</text>
+      </g>
+      <g transform="translate(62, 0)">
+        <rect width="66" height="22" rx="4" fill="#222" stroke="#333" stroke-width="1" />
+        <text class="font-sans" x="33" y="15" font-size="10.5" font-weight="700" fill="#e5e5e5" text-anchor="middle">OSINT</text>
+      </g>
+      <g transform="translate(134, 0)">
+        <rect width="62" height="22" rx="4" fill="#222" stroke="#333" stroke-width="1" />
+        <text class="font-sans" x="31" y="15" font-size="10.5" font-weight="700" fill="#e5e5e5" text-anchor="middle">Security</text>
+      </g>
+      <g transform="translate(202, 0)">
+        <rect width="48" height="22" rx="4" fill="#222" stroke="#333" stroke-width="1" />
+        <text class="font-sans" x="24" y="15" font-size="10.5" font-weight="700" fill="#e5e5e5" text-anchor="middle">Linux</text>
+      </g>
+      <g transform="translate(256, 0)">
+        <rect width="32" height="22" rx="4" fill="#E50914" />
+        <path d="M 12 6 L 22 11 L 12 16 Z" fill="#ffffff" />
+      </g>
+    </g>
+  </g>
+</svg>
