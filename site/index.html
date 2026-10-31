@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tejas Bargat — ECE Original | Netflix-Themed Portfolio</title>
+  <title>Tejas Bargat | Electronics &amp; Software Portfolio</title>
   <meta name="description" content="Official portfolio of Tejas Bargat: 2nd-year B.Tech ECE with CSE minor at TGPCET. Embedded, IoT, AI/ML, and web developer. Android-first engineer using Termux.">
-  <meta name="keywords" content="Tejas Bargat, ECE, Portfolio, Netflix Theme, NexusChat, Arduino, 8051, Python, Flask, Termux">
+  <meta name="keywords" content="Tejas Bargat, Electronics Engineering, Portfolio, NexusChat, Arduino, 8051, Python, Flask, Termux">
   <meta name="author" content="Tejas Bargat">
 
   <!-- Open Graph -->
@@ -14,10 +14,10 @@
   <meta property="og:image" content="assets/tejas-cyber-banner.png">
   <meta property="og:type" content="website">
 
-  <!-- Google Fonts -->
+  <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -26,12 +26,6 @@
   <!-- Scroll Progress Bar -->
   <div id="scrollProgressBar"></div>
 
-  <!-- Netflix Splash Intro -->
-  <div id="tejasflixSplash">
-    <div class="splash-logo">TEJASFLIX</div>
-    <div class="splash-bar"></div>
-  </div>
-
   <!-- Netflix Navbar -->
   <nav class="netflix-nav" id="mainNav">
     <div class="nav-left">
@@ -39,7 +33,7 @@
         <span class="logo-red">TEJASFLIX</span>
         <span class="logo-tag">ORIGINAL</span>
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="siteNavigation">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#projects">Top 10</a></li>
         <li><a href="#episodes">Episodes</a></li>
@@ -68,7 +62,7 @@
       <div class="profile-avatar" title="Tejas Bargat (TB)">TB</div>
 
       <!-- Mobile Hamburger -->
-      <button class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-controls="siteNavigation" aria-expanded="false">☰</button>
     </div>
   </nav>
 

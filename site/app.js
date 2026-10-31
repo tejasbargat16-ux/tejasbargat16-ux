@@ -185,34 +185,36 @@ function setupNavbar() {
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
   if (menuToggle && navLinks) {
+    const closeMenu = () => {
+      nav.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation menu");
+    };
+
     menuToggle.addEventListener("click", (e) => {
       e.stopPropagation();
-      const isVisible = navLinks.style.display === "flex";
-      navLinks.style.display = isVisible ? "none" : "flex";
-      if (!isVisible) {
-        navLinks.style.flexDirection = "column";
-        navLinks.style.position = "absolute";
-        navLinks.style.top = "68px";
-        navLinks.style.left = "0";
-        navLinks.style.right = "0";
-        navLinks.style.background = "rgba(20,20,20,0.98)";
-        navLinks.style.padding = "20px 4%";
-        navLinks.style.borderBottom = "1px solid rgba(255,255,255,0.1)";
-      }
+      const isOpen = nav.classList.toggle("menu-open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
     });
 
     // Close mobile menu when clicking outside the nav
     document.addEventListener("click", (e) => {
-      if (!nav.contains(e.target) && navLinks.style.display === "flex") {
-        navLinks.style.display = "none";
+      if (!nav.contains(e.target) && nav.classList.contains("menu-open")) {
+        closeMenu();
       }
     });
 
     // Close mobile menu when a nav link is clicked
     navLinks.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navLinks.style.display = "none";
-      });
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && nav.classList.contains("menu-open")) {
+        closeMenu();
+        menuToggle.focus();
+      }
     });
   }
 }
@@ -591,19 +593,6 @@ function setupSimulators() {
 // 6. Animation Engine - Scroll Reveal, Splash, Particles & Counters
 // ==========================================================================
 function setupAnimations() {
-  // Splash Screen
-  const splash = document.getElementById("tejasflixSplash");
-  if (splash) {
-    document.body.style.overflow = "hidden";
-    setTimeout(() => {
-      splash.classList.add("splash-exit");
-      setTimeout(() => {
-        splash.style.display = "none";
-        document.body.style.overflow = "";
-      }, 500);
-    }, 2200);
-  }
-
   // Scroll Progress Bar
   const progressBar = document.getElementById("scrollProgressBar");
   if (progressBar) {
