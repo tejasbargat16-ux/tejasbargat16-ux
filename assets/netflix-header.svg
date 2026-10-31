@@ -44,17 +44,20 @@
     .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
     .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
     
-    /* Subtle Animations */
+    /* Animations with solid fallback for static & GitHub markdown rendering */
     .fade-up {
-      animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+      opacity: 1;
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: fadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
     .delay-1 { animation-delay: 0.15s; }
     .delay-2 { animation-delay: 0.3s; }
     .delay-3 { animation-delay: 0.45s; }
 
     @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(12px); }
-      to { opacity: 1; transform: translateY(0); }
+      0% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
 
     .pulse {
@@ -80,7 +83,7 @@
   <g transform="translate(48, 28)">
     <!-- Red Logo -->
     <g transform="translate(0, 0)">
-      <text class="font-sans" font-size="28" font-weight="900" letter-spacing="2" fill="#E50914" filter="url(#red-glow)">TEJAS</text>
+      <text class="font-sans" x="0" y="24" font-size="28" font-weight="900" letter-spacing="2" fill="#E50914" filter="url(#red-glow)">TEJAS</text>
     </g>
 
     <!-- Nav Items -->
@@ -168,19 +171,17 @@
   </g>
 
   <!-- Left Main Hero Content -->
-  <g transform="translate(68, 95)">
+  <g transform="translate(68, 88)">
     <!-- Netflix Series Brand Bar -->
     <g class="fade-up">
       <rect x="0" y="3" width="16" height="22" rx="2" fill="#E50914" />
       <text class="font-sans" x="8" y="19" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">T</text>
-      <text class="font-sans" x="26" y="19" font-size="12" font-weight="800" letter-spacing="5" fill="#b3b3b3">S E R I E S</text>
+      <text class="font-sans" x="26" y="19" font-size="12" font-weight="800" letter-spacing="5" fill="#b3b3b3">SERIES</text>
     </g>
 
     <!-- Main Title -->
     <g transform="translate(0, 40)" class="fade-up delay-1">
-      <text class="font-sans" x="0" y="65" font-size="78" font-weight="900" letter-spacing="2" fill="#ffffff">
-        TEJAS<tspan fill="#E50914">.</tspan>
-      </text>
+      <text class="font-sans" x="0" y="65" font-size="78" font-weight="900" letter-spacing="2" fill="#ffffff">TEJAS<tspan fill="#E50914">.</tspan></text>
     </g>
 
     <!-- Netflix Meta Badges Row -->
@@ -198,13 +199,13 @@
       <text x="206" y="14" font-size="14" font-weight="600" fill="#999999">2 Seasons</text>
 
       <!-- Ultra HD 4K Badge -->
-      <g transform="translate(286, -2)">
+      <g transform="translate(292, -2)">
         <rect width="42" height="22" rx="3" fill="none" stroke="#666666" stroke-width="1.2" />
         <text x="21" y="15" font-size="11" font-weight="700" fill="#d9d9d9" text-anchor="middle">4K</text>
       </g>
 
       <!-- Spatial Audio Badge -->
-      <g transform="translate(336, -2)">
+      <g transform="translate(344, -2)">
         <rect width="58" height="22" rx="3" fill="none" stroke="#666666" stroke-width="1.2" />
         <text x="29" y="15" font-size="11" font-weight="700" fill="#d9d9d9" text-anchor="middle">AUDIO</text>
       </g>
@@ -213,22 +214,15 @@
     <!-- Top 10 Ranking Ribbon -->
     <g transform="translate(0, 172)" class="font-sans fade-up delay-2">
       <rect width="28" height="28" rx="4" fill="#E50914" />
-      <!-- Top 10 Ribbon graphic -->
       <text x="14" y="18" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">#1</text>
       <text x="38" y="19" font-size="15" font-weight="800" letter-spacing="1" fill="#ffffff">#1 in Tech &amp; Engineering Today</text>
     </g>
 
     <!-- Description Logline -->
     <g transform="translate(0, 218)" class="font-sans fade-up delay-2">
-      <text y="0" font-size="15.5" font-weight="400" fill="#e5e5e5" line-height="24">
-        A 2nd-year B.Tech ECE student with a CSE Minor at TGPCET (RTMNU), Wardha.
-      </text>
-      <text y="24" font-size="15.5" font-weight="400" fill="#cccccc">
-        Cracking GATE EC, engineering embedded hardware &amp; AI/ML systems, and
-      </text>
-      <text y="48" font-size="15.5" font-weight="500" fill="#ffffff">
-        shipping entire production applications directly from an Android phone using Termux.
-      </text>
+      <text x="0" y="18" font-size="15.5" font-weight="400" fill="#e5e5e5">A 2nd-year B.Tech ECE student with a CSE Minor at TGPCET (RTMNU), Wardha.</text>
+      <text x="0" y="42" font-size="15.5" font-weight="400" fill="#cccccc">Cracking GATE EC, engineering embedded hardware &amp; AI/ML systems, and</text>
+      <text x="0" y="66" font-size="15.5" font-weight="500" fill="#ffffff">shipping entire production applications directly from an Android phone using Termux.</text>
     </g>
 
     <!-- Action Buttons Row -->
