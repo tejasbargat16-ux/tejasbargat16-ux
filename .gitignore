@@ -4,3 +4,6 @@ Thumbs.db
 *.log
 .env
 .env.local
+portfolio/node_modules/
+portfolio/dist/
+site/portfolio/

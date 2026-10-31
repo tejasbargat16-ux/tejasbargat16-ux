@@ -6,8 +6,8 @@
   </a>
   <br/><br/>
 
-  <a href="https://github.com/tejasbargat16-ux/Tejas-2.0-Portfolio">
-    <img src="https://img.shields.io/badge/▶%20PLAY-Portfolio-E50914?style=for-the-badge&labelColor=141414" alt="Play" />
+  <a href="https://tejasbargat16-ux.github.io/tejasbargat16-ux/portfolio/">
+    <img src="https://img.shields.io/badge/▶%20PLAY-Portfolio%202.0-E50914?style=for-the-badge&labelColor=141414" alt="Play Portfolio 2.0" />
   </a>
   <a href="https://tejasbargat16-ux.github.io/tejasbargat16-ux/">
     <img src="https://img.shields.io/badge/🍿%20STREAM-TEJASFLIX-E50914?style=for-the-badge&labelColor=141414&logo=netflix&logoColor=white" alt="Stream on TEJASFLIX" />
@@ -32,7 +32,7 @@
 
 <br/>
 
-### 🔥 Top 10 Projects in India Today
+### 🔥 Top Projects Today
 
 <div align="center">
   <a href="https://github.com/tejasbargat16-ux/nexuschat"><img src="./assets/card-1.svg" width="24%" alt="NEXUS Chat" /></a>
@@ -85,9 +85,8 @@
 
 ---
 
-<div align="center">
-
 ### 🍿 Experience the TEJASFLIX Interactive Web Experience
+
 Launch the full responsive web app with interactive project simulators, live commit analytics, and synthesized Netflix audio:
 
 ```bash
@@ -109,6 +108,25 @@ node scripts/serve.mjs
 | `npm run generate` / `node generate.mjs` | Refresh SVG assets, rebuild heatmap & sync to `site/assets/` |
 | `npm run contributions` | Fetch live contribution data from GitHub public profile |
 | `npm run build:svg` | Re-render contribution snake SVG from data snapshot |
+
+---
+
+### 🎞️ Portfolio 2.0 · React UI
+
+A cinematic, mobile-first React + Vite portfolio ships inside this repo (`portfolio/`) and is deployed to GitHub Pages next to TEJASFLIX.
+
+| | |
+|:---|:---|
+| 🌐 **Live** | [tejasbargat16-ux.github.io/tejasbargat16-ux/portfolio](https://tejasbargat16-ux.github.io/tejasbargat16-ux/portfolio/) |
+| ✨ **UI** | Animated preloader · hero reveal · scroll animations · skill bars · project cards · Python Day 01→13 timeline · 2026→2028 roadmap · electronics lab |
+| 🧱 **Stack** | React 19 · Vite 8 |
+
+```bash
+cd portfolio
+npm install
+npm run dev      # local dev server
+npm run build    # production build -> portfolio/dist
+```
 
 ---
 
@@ -143,7 +161,8 @@ TEJASFLIX is architected into two synchronized layers:
 #### 🛠️ Key Highlights:
 1. **Audio Synthesis (Zero Audio Files)**: Custom Web Audio API synthesizer in `site/app.js` recreating the Netflix cinematic "Ta-Dum" intro chord using oscillators, low-pass filters, and harmonic sweeps.
 2. **Interactive Hardware Simulators**: In-browser interactive models of the HC-SR04 Dual Water Tank, 8051 Dual-Axis Solar Tracker, Smart Irrigation controller, and NEXUS AI multi-provider terminal.
-3. **Android-First Engineering**: Every line of code, circuit schematic, and commit was built and pushed from an Android smartphone via **Termux**.
+3. **React Portfolio 2.0**: Vite-built UI in `portfolio/`, compiled in CI and published under `/portfolio/` of the same Pages site.
+4. **Android-First Engineering**: Every line of code, circuit schematic, and commit was built and pushed from an Android smartphone via **Termux**.
 
 ---
 
@@ -152,6 +171,7 @@ TEJASFLIX is architected into two synchronized layers:
 ```text
 ├── assets/                       # Profile SVGs and billboard graphics
 │   ├── netflix-header.svg        # Cinematic Netflix billboard header
+│   ├── tejas-cyber-banner.png    # Social/Open Graph banner
 │   ├── card-*.svg                # Top 10 project poster cards
 │   ├── contribution-snake.svg    # Animated slithering contribution heatmap
 │   ├── poster-*.svg              # Project poster cards
@@ -160,6 +180,9 @@ TEJASFLIX is architected into two synchronized layers:
 │   ├── build-heatmap-svg.mjs     # Standalone heatmap SVG generator
 │   ├── fetch-contributions.mjs   # Scrapes/fetches public GitHub contributions
 │   └── serve.mjs                 # Zero-dependency local dev HTTP server
+├── portfolio/                    # Tejas 2.0 React + Vite portfolio (built in CI to /portfolio/)
+│   ├── src/                      # App.jsx, data.js, styles.css, assets
+│   └── vite.config.js            # Relative base for sub-path hosting
 ├── site/                         # Production web application (GitHub Pages)
 │   ├── assets/                   # Synced SVGs and banner assets
 │   ├── data/contributions.json   # Real contribution snapshot data
@@ -167,7 +190,7 @@ TEJASFLIX is architected into two synchronized layers:
 │   ├── style.css                 # Netflix design system stylesheet
 │   └── app.js                    # Audio engine, simulators & event handlers
 ├── .github/workflows/            # GitHub Actions CI/CD automation
-│   ├── pages.yml                 # Automated deployment to GitHub Pages
+│   ├── pages.yml                 # Builds portfolio + deploys everything to GitHub Pages
 │   └── profile-heatmap.yml       # Daily automated contribution snake refresh
 ├── generate.mjs                  # Asset compilation & synchronization pipeline
 ├── package.json                  # Scripts and repository metadata

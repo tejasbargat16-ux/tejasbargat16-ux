@@ -32,6 +32,14 @@ jobs:
       - name: Build assets & sync site
         run: node generate.mjs
 
+      - name: Build React portfolio (Tejas 2.0)
+        working-directory: portfolio
+        run: |
+          npm ci
+          npm run build
+          mkdir -p ../site/portfolio
+          cp -r dist/. ../site/portfolio/
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
