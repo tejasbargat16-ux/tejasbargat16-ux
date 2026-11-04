@@ -1,205 +1,93 @@
 <div align="center">
-  <img src="./assets/netflix-header.svg" width="100%" alt="TEJAS - A Tejas Original" />
+  <img src="./assets/tejas-cyber-banner.png" width="100%" alt="Tejas Bargat - Developer & Engineering Student" />
 
-  <a href="https://github.com/tejasbargat16-ux">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&duration=3000&pause=900&color=E50914&center=true&vCenter=true&width=640&lines=%E2%96%B6+Now+Playing%3A+Tejas;2nd+Year+ECE+%7C+CSE+Minor;Embedded+%2B+IoT+%2B+AI%2FML;Building+from+my+phone+%F0%9F%93%B1;Next+Episode%3A+GATE+EC+%F0%9F%8E%AF" alt="Typing SVG" />
-  </a>
-  <br/><br/>
+  # Tejas Bargat
+
+  **2nd-Year B.Tech ECE Student (CSE Minor) at TGPCET | Embedded Systems, IoT & AI/ML Developer**
+
+  <br/>
 
   <a href="https://tejasbargat16-ux.github.io/tejasbargat16-ux/portfolio/">
-    <img src="https://img.shields.io/badge/▶%20PLAY-Portfolio%202.0-E50914?style=for-the-badge&labelColor=141414" alt="Play Portfolio 2.0" />
+    <img src="https://img.shields.io/badge/Live%20Portfolio-00d2ff?style=for-the-badge&logoColor=black&labelColor=0d1117" alt="Live Portfolio" />
   </a>
-  <a href="https://tejasbargat16-ux.github.io/tejasbargat16-ux/">
-    <img src="https://img.shields.io/badge/🍿%20STREAM-TEJASFLIX-E50914?style=for-the-badge&labelColor=141414&logo=netflix&logoColor=white" alt="Stream on TEJASFLIX" />
-  </a>
-  <a href="https://www.linkedin.com/in/tejas-bargat-9ab8523b0">
-    <img src="https://img.shields.io/badge/＋%20MY%20LIST-LinkedIn-141414?style=for-the-badge&logo=linkedin&logoColor=E50914" alt="LinkedIn" />
+  <a href="https://www.linkedin.com/in/tejas-bargat-9ab8523b0/">
+    <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=00d2ff" alt="LinkedIn" />
   </a>
   <a href="mailto:tejasbargat16@gmail.com">
-    <img src="https://img.shields.io/badge/✉%20CONTACT-Email-141414?style=for-the-badge&logo=gmail&logoColor=E50914" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=00d2ff" alt="Email" />
   </a>
-  <br/><br/>
-
-  <img src="https://komarev.com/ghpvc/?username=tejasbargat16-ux&label=Total%20Views&color=E50914&style=flat" alt="Views" />
 </div>
 
 <br/>
 
-### 🎬 About This Series
+### 👤 About
 
-> **TEJAS** · Drama · Tech · Coming-of-Age · TV-14 · 1 Season · Ongoing  
-> A 2nd-year B.Tech ECE student with a CSE Minor at TGPCET (RTMNU), based in Wardha, Maharashtra. Preparing for GATE EC, chasing internships in Embedded, IoT, AI/ML, Software Dev & Cybersecurity, and shipping everything from an Android phone using Termux.
+- **Study**: 2nd-year B.Tech in Electronics & Communication Engineering (ECE) with a Computer Science & Engineering (CSE) minor at TGPCET (RTMNU), Maharashtra.
+- **Building**: Embedded IoT prototypes (dual water tank controller, 8051 solar tracker) and AI-driven software systems (Nexus AI, CampusCare AI) developed on Android via Termux.
+- **Learning**: Digital circuit design, embedded C firmware, daily programming fundamentals across Python, Java, and C++, and structured preparation for GATE EC (2028).
+- **Open to**: Engineering internships, technical collaboration, and open-source contributions in embedded systems, IoT, and software development.
 
 <br/>
 
-### 🔥 Top Projects Today
+### 🚀 Featured Projects
+
+| Project | What it does | Tech | Status | Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **Nexus AI** | Mobile-first personal AI assistant concept exploring conversational interaction, memory architecture, web search integration, and modular plugins. | `Python`, `AI APIs`, `Termux`, `FastAPI`, `SQLite` | `Building` | [Repo](https://github.com/tejasbargat16-ux/Nexus-AIOS) |
+| **Dual Water Tank Monitoring System** | Two-tank water monitoring and automatic motor control system with sensor-based level detection, visual RGB status indicators, and audible buzzer alerts with overflow protection. | `Arduino UNO`, `ESP32`, `Sensors`, `Embedded C`, `Relay Control` | `Prototype` | [Repo](https://github.com/tejasbargat16-ux/water-tank-auto-controller) |
+| **Solar Tracking System** | 8051 microcontroller-based solar tracking concept utilizing light-dependent resistor (LDR) differential sensing and motor-driver control logic to follow peak sunlight. | `8051 MCU`, `LDR Sensors`, `Stepper Motor`, `Embedded C`, `Automation` | `Prototype` | [Repo](https://github.com/tejasbargat16-ux) |
+| **Tejas 2.0 Portfolio** | Responsive personal engineering portfolio showcasing skills, hardware builds, AI experiments, public learning streaks, and architectural design language. | `React 19`, `Vite`, `JavaScript`, `Modern CSS`, `GitHub Pages` | `Deployed` | [Demo](https://tejasbargat16-ux.github.io/tejasbargat16-ux/portfolio/) · [Repo](https://github.com/tejasbargat16-ux/Tejas-2.0-Portfolio) |
+| **Programming Learning Journey** | Disciplined day-by-day public learning journey covering Python, Java, JavaScript, and C fundamentals, LeetCode problem solving, and practical micro-builds committed to GitHub. | `Python`, `Java`, `JavaScript`, `C`, `Termux`, `Git` | `Active learning` | [Repo](https://github.com/tejasbargat16-ux/Python-Learning-Journey) |
+| **CampusCare AI** | AI-powered campus complaint management platform combining Flutter mobile frontend with FastAPI backend, featuring role-based access, issue tracking, image uploads, priority analysis, and admin dashboards. | `Flutter`, `FastAPI`, `Python`, `AI Priority Analysis`, `REST APIs` | `Building` | [Repo](https://github.com/tejasbargat16-ux/campuscareai_edition) |
+
+<br/>
+
+### 🛠️ Tech Stack
+
+| Domain | Skills & Technologies |
+| :--- | :--- |
+| **Languages** | `C` · `C++` · `Python` · `Java` · `JavaScript` · `Embedded C` |
+| **Web** | `HTML5` · `CSS3` · `JavaScript (DOM)` · `Responsive Design` · `Frontend Development` |
+| **Embedded & IoT** | `8051 Microcontroller` · `Arduino UNO` · `ESP32` · `ESP8266` · `Digital Electronics` · `Digital Circuit Design` · `Microcontrollers` · `Sensors & Interfacing` · `Internet of Things (IoT)` · `Automation Systems` · `Basic Circuit Design` |
+| **AI** | `AI Application Dev` · `AI-assisted development` · `Prompt Engineering` · `AI Automation` · `AI Product Prototyping` |
+| **Tools** | `VS Code` · `Git` · `GitHub` · `Termux` · `Pydroid` · `Android Dev Environment` |
+
+<br/>
+
+### ⚡ Portfolio & NEXUS AI
+
+- **React 19 + Vite Showcase**: A responsive web portfolio built with React 19 and Vite 8, featuring dark cinematic styling, an interactive 36-skill taxonomy, authentic project telemetry, and mobile-first design.
+- **Embedded NEXUS AI Assistant**: Integrated natively into the portfolio with a dual-engine architecture to serve as a conversational engineering representative.
+- **Client-Side Local Knowledge Engine**: Operates client-side on GitHub Pages with zero latency and no external API keys required, grounded strictly in verified academic, project, and skill data.
+- **Optional Full-Stack LLM Backend**: Features automated rate limiting with graceful failover to local mode when connected to Google Gemini, Groq, or OpenAI via Node/Express or serverless endpoints.
+- **Live Implementation**: Available online at [tejasbargat16-ux.github.io/tejasbargat16-ux/portfolio/](https://tejasbargat16-ux.github.io/tejasbargat16-ux/portfolio/).
+
+<br/>
+
+### 🗺️ Roadmap 2026 → 2028
+
+- **2026 · Build the Base**: Strengthen programming fundamentals, second-year ECE courses, and consistent daily project building in public.
+- **2027 · Connect the Disciplines**: Deepen embedded systems, AI integrations, and full-stack engineering through practical, working prototypes.
+- **2028 · Test the Foundation**: Prepare rigorously for GATE 2028 across CSE/ECE interests and evaluate advanced technical horizons.
+
+<br/>
+
+### 📊 GitHub Stats
 
 <div align="center">
-  <a href="https://github.com/tejasbargat16-ux/nexuschat"><img src="./assets/card-1.svg" width="24%" alt="NEXUS Chat" /></a>
-  <a href="https://github.com/tejasbargat16-ux"><img src="./assets/card-2.svg" width="24%" alt="Water Tank Monitor" /></a>
-  <a href="https://github.com/tejasbargat16-ux/Tejas-2.0-Portfolio"><img src="./assets/card-3.svg" width="24%" alt="Tejas 2.0 Portfolio" /></a>
-  <a href="https://github.com/tejasbargat16-ux"><img src="./assets/card-4.svg" width="24%" alt="OSINT Toolkit" /></a>
-</div>
-
-<br/>
-
-### ⏯️ Continue Watching
-
-| Title | Progress | Status |
-| :--- | :---: | :---: |
-| ☕ **Java** · [Learning Journey](https://github.com/tejasbargat16-ux/Java-Learning-Journey) | <img src="https://geps.dev/progress/40?dangerColor=E50914&warningColor=E50914&successColor=E50914" alt="Java 40%" width="220" /> | `40% Watched` |
-| 🟨 **JavaScript** · [Learning Journey](https://github.com/tejasbargat16-ux/JavaScript-Learning-Journey) | <img src="https://geps.dev/progress/30?dangerColor=E50914&warningColor=E50914&successColor=E50914" alt="JavaScript 30%" width="220" /> | `30% Watched` |
-| 📡 **GATE EC** · Prep | <img src="https://geps.dev/progress/25?dangerColor=E50914&warningColor=E50914&successColor=E50914" alt="GATE EC 25%" width="220" /> | `25% Streamed` |
-| 🤖 **NEXUS Chat** · [Build](https://github.com/tejasbargat16-ux/nexuschat) | <img src="https://geps.dev/progress/60?dangerColor=E50914&warningColor=E50914&successColor=E50914" alt="NEXUS Chat 60%" width="220" /> | `Season 1 Active` |
-
-<br/>
-
-### 📈 Trending Now · Tech Stack
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,js,cpp,html,css,flask,arduino,git,github,linux&perline=11&theme=dark" alt="Tech stack" />
-</div>
-
-<br/>
-
-### 🏆 Coming Soon
-
-- 🎯 **Internship Target**: TCS · Infosys · Wipro · LTTS · Qualcomm · Intel · NVIDIA
-- 📡 **Exam Target**: Crack GATE EC
-- 🚀 **Production Releases**: More embedded + AI projects, shipped publicly
-
-<br/>
-
-### 📊 Viewing Stats
-
-<div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=tejasbargat16-ux&show_icons=true&hide_border=true&bg_color=141414&title_color=E50914&icon_color=E50914&text_color=ffffff" alt="Stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejasbargat16-ux&layout=compact&hide_border=true&bg_color=141414&title_color=E50914&text_color=ffffff" alt="Top languages" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=tejasbargat16-ux&show_icons=true&hide_border=true&bg_color=0d1117&title_color=00d2ff&icon_color=00d2ff&text_color=ffffff" alt="Tejas Bargat's GitHub Stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=tejasbargat16-ux&layout=compact&hide_border=true&bg_color=0d1117&title_color=00d2ff&text_color=ffffff" alt="Tejas Bargat's Top Languages" />
   <br/><br/>
-  <img src="https://streak-stats.demolab.com?user=tejasbargat16-ux&hide_border=true&background=141414&ring=E50914&fire=E50914&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=E50914&sideLabels=ffffff&dates=b3b3b3" alt="Streak" />
-  <br/><br/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=tejasbargat16-ux&bg_color=141414&color=E50914&line=E50914&point=ffffff&area=true&area_color=E50914&hide_border=true" width="100%" alt="Activity graph" />
-  <br/><br/>
-  <img src="./assets/contribution-snake.svg" width="100%" alt="Contributions Heatmap" />
+  <img src="https://streak-stats.demolab.com?user=tejasbargat16-ux&hide_border=true&background=0d1117&ring=00d2ff&fire=00d2ff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00d2ff&sideLabels=ffffff&dates=b3b3b3" alt="Tejas Bargat's GitHub Streak" />
 </div>
-
----
-
-### 🍿 Experience the TEJASFLIX Interactive Web Experience
-
-Launch the full responsive web app with interactive project simulators, live commit analytics, and synthesized Netflix audio:
-
-```bash
-# Clone the repository
-git clone https://github.com/tejasbargat16-ux/tejasbargat16-ux.git
-
-# Navigate to project directory
-cd tejasbargat16-ux
-
-# Start local streaming server (zero external npm dependencies required)
-node scripts/serve.mjs
-```
-
-*Runs at `http://localhost:3000` with zero external dependencies.*
-
-| Command | Action |
-|:---|:---|
-| `npm start` / `node scripts/serve.mjs` | Launch local streaming web app on port 3000 |
-| `npm run generate` / `node generate.mjs` | Refresh SVG assets, rebuild heatmap & sync to `site/assets/` |
-| `npm run contributions` | Fetch live contribution data from GitHub public profile |
-| `npm run build:svg` | Re-render contribution snake SVG from data snapshot |
-
----
-
-### 🎞️ Portfolio 2.0 · React UI
-
-A cinematic, mobile-first React + Vite portfolio ships inside this repo (`portfolio/`) and is deployed to GitHub Pages next to TEJASFLIX.
-
-| | |
-|:---|:---|
-| 🌐 **Live** | [tejasbargat16-ux.github.io/tejasbargat16-ux/portfolio](https://tejasbargat16-ux.github.io/tejasbargat16-ux/portfolio/) |
-| ✨ **UI** | Animated preloader · hero reveal · scroll animations · skill bars · project cards · Python Day 01→13 timeline · 2026→2028 roadmap · electronics lab |
-| 🧱 **Stack** | React 19 · Vite 8 |
-
-```bash
-cd portfolio
-npm install
-npm run dev      # local dev server
-npm run build    # production build -> portfolio/dist
-```
-
----
-
-### 🏛️ Architecture & System Blueprint
-
-TEJASFLIX is architected into two synchronized layers:
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    TEJASFLIX ECOSYSTEM                      │
-├──────────────────────────────┬──────────────────────────────┤
-│    GitHub Profile README     │   Interactive Web Stream     │
-│   (Static SVG & Badges)      │   (Zero-Dep Vanilla App)     │
-├──────────────────────────────┼──────────────────────────────┤
-│ • assets/*.svg visual assets │ • site/index.html (HTML5)    │
-│ • Real commit snake SVG      │ • site/style.css (Dark Mode) │
-│ • Shields.io social badges   │ • site/app.js (Web Audio)    │
-│ • Daily auto-refresh via CI  │ • Hardware & AI Simulators   │
-└──────────────┬───────────────┴──────────────┬───────────────┘
-               │                              │
-               └──────────────┬───────────────┘
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│               AUTOMATION & PIPELINE (CI/CD)                 │
-├─────────────────────────────────────────────────────────────┤
-│ • .github/workflows/profile-heatmap.yml (Daily at 05:30 UTC)│
-│ • .github/workflows/pages.yml (Continuous Deployment)       │
-│ • generate.mjs (Automated build & asset synchronization)    │
-└─────────────────────────────────────────────────────────────┘
-```
-
-#### 🛠️ Key Highlights:
-1. **Audio Synthesis (Zero Audio Files)**: Custom Web Audio API synthesizer in `site/app.js` recreating the Netflix cinematic "Ta-Dum" intro chord using oscillators, low-pass filters, and harmonic sweeps.
-2. **Interactive Hardware Simulators**: In-browser interactive models of the HC-SR04 Dual Water Tank, 8051 Dual-Axis Solar Tracker, Smart Irrigation controller, and NEXUS AI multi-provider terminal.
-3. **React Portfolio 2.0**: Vite-built UI in `portfolio/`, compiled in CI and published under `/portfolio/` of the same Pages site.
-4. **Android-First Engineering**: Every line of code, circuit schematic, and commit was built and pushed from an Android smartphone via **Termux**.
-
----
-
-### 📂 Directory Structure
-
-```text
-├── assets/                       # Profile SVGs and billboard graphics
-│   ├── netflix-header.svg        # Cinematic Netflix billboard header
-│   ├── tejas-cyber-banner.png    # Social/Open Graph banner
-│   ├── card-*.svg                # Top 10 project poster cards
-│   ├── contribution-snake.svg    # Animated slithering contribution heatmap
-│   ├── poster-*.svg              # Project poster cards
-│   └── row-*.svg                 # Netflix category divider SVGs
-├── scripts/                      # Build, dev server and scraper scripts
-│   ├── build-heatmap-svg.mjs     # Standalone heatmap SVG generator
-│   ├── fetch-contributions.mjs   # Scrapes/fetches public GitHub contributions
-│   └── serve.mjs                 # Zero-dependency local dev HTTP server
-├── portfolio/                    # Tejas 2.0 React + Vite portfolio (built in CI to /portfolio/)
-│   ├── src/                      # App.jsx, data.js, styles.css, assets
-│   └── vite.config.js            # Relative base for sub-path hosting
-├── site/                         # Production web application (GitHub Pages)
-│   ├── assets/                   # Synced SVGs and banner assets
-│   ├── data/contributions.json   # Real contribution snapshot data
-│   ├── index.html                # Semantic HTML5 interactive application
-│   ├── style.css                 # Netflix design system stylesheet
-│   └── app.js                    # Audio engine, simulators & event handlers
-├── .github/workflows/            # GitHub Actions CI/CD automation
-│   ├── pages.yml                 # Builds portfolio + deploys everything to GitHub Pages
-│   └── profile-heatmap.yml       # Daily automated contribution snake refresh
-├── generate.mjs                  # Asset compilation & synchronization pipeline
-├── package.json                  # Scripts and repository metadata
-└── README.md                     # Profile presentation & documentation
-```
 
 <br/>
 
-<div align="center">
-  <p>Open to internships and collaborations. Hit ▶ PLAY on a repo and stay a while.</p>
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:141414,100:E50914&height=120&section=footer" width="100%" alt="footer" />
-</div>
+### 📬 Contact
+
+Open to internships, technical collaboration, and discussions on embedded systems or software engineering.
+
+- **Email**: [tejasbargat16@gmail.com](mailto:tejasbargat16@gmail.com)
+- **LinkedIn**: [linkedin.com/in/tejas-bargat-9ab8523b0](https://www.linkedin.com/in/tejas-bargat-9ab8523b0/)
+- **GitHub**: [github.com/tejasbargat16-ux](https://github.com/tejasbargat16-ux)
+- **Location**: Maharashtra, India

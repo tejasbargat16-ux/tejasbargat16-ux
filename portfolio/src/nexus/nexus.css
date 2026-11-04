@@ -1,0 +1,686 @@
+/* ==========================================================================
+   NEXUS AI — DESIGN SYSTEM & STYLING
+   Tejas 2.0 Portfolio Conversational Interface
+   Palette: #080808 (Deep Black), #100B0C (Burgundy Depth), #F20D20 (Vivid Red)
+   ========================================================================== */
+
+/* ---- Floating Launcher Button ---- */
+.nexus-chat-root {
+  position: relative;
+  z-index: 9999;
+}
+
+.nexus-launcher {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px 10px 14px;
+  background: #100b0c;
+  border: 1px solid rgba(242, 13, 32, 0.55);
+  border-radius: 999px;
+  color: var(--text);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.75), 0 0 20px rgba(242, 13, 32, 0.22);
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1),
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+  outline: none;
+}
+
+.nexus-launcher:hover {
+  transform: translateY(-3px) scale(1.02);
+  border-color: var(--accent);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85), 0 0 28px var(--accent-glow);
+}
+
+.nexus-launcher:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.nexus-launcher-glow {
+  position: absolute;
+  inset: -2px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 50% 50%, rgba(242, 13, 32, 0.3) 0%, transparent 70%);
+  opacity: 0.6;
+  filter: blur(8px);
+  pointer-events: none;
+  animation: launcher-pulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes launcher-pulse {
+  0% { opacity: 0.3; transform: scale(0.95); }
+  100% { opacity: 0.75; transform: scale(1.05); }
+}
+
+.nexus-launcher-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.nexus-online-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 10px var(--green-glow);
+  animation: pulse-dot 2s ease infinite;
+}
+
+.nexus-launcher-text {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--text);
+}
+
+.nexus-launcher-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  transition: transform 0.3s var(--ease-spring);
+  position: relative;
+  z-index: 1;
+}
+
+.nexus-launcher:hover .nexus-launcher-icon {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.nexus-unread-dot {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 9px;
+  height: 9px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--accent-glow);
+  border: 2px solid #080808;
+}
+
+/* ---- Chat Panel Window ---- */
+.nexus-panel {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9999;
+  width: 410px;
+  max-width: calc(100vw - 32px);
+  height: 600px;
+  max-height: calc(100vh - 56px);
+  background: #0b090a;
+  border: 1px solid rgba(242, 13, 32, 0.4);
+  border-radius: 14px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(242, 13, 32, 0.18);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: panel-entrance 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.nexus-panel.minimized {
+  height: auto;
+  max-height: 72px;
+  border-radius: 12px;
+}
+
+@keyframes panel-entrance {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Header */
+.nexus-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: #110c0e;
+  border-bottom: 1px solid var(--border);
+  user-select: none;
+}
+
+.nexus-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.nexus-avatar {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(242, 13, 32, 0.12);
+  border: 1px solid rgba(242, 13, 32, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+}
+
+.nexus-status-indicator {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 8px var(--green-glow);
+  border: 1.5px solid #080808;
+}
+
+.nexus-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nexus-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nexus-title {
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--text);
+}
+
+.nexus-online-tag {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  color: var(--green);
+  font-weight: 700;
+  background: rgba(53, 201, 107, 0.1);
+  border: 1px solid rgba(53, 201, 107, 0.25);
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+.nexus-subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.nexus-header-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nexus-control-btn {
+  background: transparent;
+  border: none;
+  color: var(--dim);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.nexus-control-btn:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nexus-control-btn.close:hover {
+  color: #ff4d5a;
+  background: rgba(255, 77, 90, 0.12);
+}
+
+/* Messages Stream */
+.nexus-messages-stream {
+  flex: 1;
+  overflow-y: auto;
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: radial-gradient(circle at 80% 20%, rgba(242, 13, 32, 0.04) 0%, transparent 60%), #080808;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+.nexus-messages-stream::-webkit-scrollbar {
+  width: 5px;
+}
+
+.nexus-messages-stream::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.nexus-messages-stream::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.nexus-message-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.nexus-message-row.user-row {
+  justify-content: flex-end;
+}
+
+.nexus-msg-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: rgba(242, 13, 32, 0.15);
+  border: 1px solid rgba(242, 13, 32, 0.35);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.nexus-message-bubble-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 84%;
+}
+
+.nexus-message-row.user-row .nexus-message-bubble-wrap {
+  align-items: flex-end;
+}
+
+.nexus-bubble {
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--text);
+  word-break: break-word;
+}
+
+.nexus-bubble.user-bubble {
+  background: #200d11;
+  border: 1px solid rgba(242, 13, 32, 0.4);
+  color: #fff;
+  border-bottom-right-radius: 2px;
+}
+
+.nexus-bubble.nexus-bubble-ai {
+  background: #121011;
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--accent);
+  border-bottom-left-radius: 2px;
+}
+
+.nexus-bubble.error-bubble {
+  border-left-color: #ff4d5a;
+  background: rgba(255, 77, 90, 0.08);
+}
+
+.nexus-message-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--dim);
+  padding: 0 4px;
+}
+
+.nexus-copy-btn {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.6rem;
+  font-family: var(--font-mono);
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.nexus-copy-btn:hover {
+  color: var(--accent);
+}
+
+/* Formatted Text */
+.nexus-formatted-text p {
+  margin: 0 0 8px 0;
+}
+
+.nexus-formatted-text p:last-child {
+  margin-bottom: 0;
+}
+
+.nexus-line-break {
+  height: 8px;
+}
+
+.nexus-bullet-point {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.bullet-sym {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.nexus-inline-link {
+  color: #ff5b69;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.nexus-inline-link:hover {
+  color: #ffffff;
+}
+
+.nexus-formatted-text code {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent-light);
+}
+
+/* Action Chips */
+.nexus-message-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nexus-action-btn {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 5px 10px;
+  background: rgba(242, 13, 32, 0.08);
+  border: 1px solid rgba(242, 13, 32, 0.3);
+  border-radius: 4px;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nexus-action-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+/* Typing Indicator */
+.nexus-typing-bubble {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 14px;
+  background: #121011;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  border-bottom-left-radius: 2px;
+}
+
+.nexus-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: typing-dot 1.4s infinite ease-in-out;
+}
+
+.nexus-dot:nth-child(1) { animation-delay: 0s; }
+.nexus-dot:nth-child(2) { animation-delay: 0.2s; }
+.nexus-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typing-dot {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
+  40% { transform: translateY(-4px); opacity: 1; }
+}
+
+.nexus-typing-label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--dim);
+  margin-left: 6px;
+}
+
+/* Suggested Tray */
+.nexus-suggestions-tray {
+  padding: 8px 14px 6px;
+  background: #0d0a0b;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.nexus-tray-hint {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  color: var(--dim);
+  white-space: nowrap;
+}
+
+.nexus-suggestions-scroll {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+}
+
+.nexus-suggestions-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.nexus-suggestion-pill {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-sec);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nexus-suggestion-pill:hover {
+  background: rgba(242, 13, 32, 0.1);
+  border-color: rgba(242, 13, 32, 0.4);
+  color: var(--text);
+}
+
+/* Input Area */
+.nexus-input-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  background: #110c0e;
+  border-top: 1px solid var(--border);
+}
+
+.nexus-input-field {
+  flex: 1;
+  background: #080808;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.88rem;
+  resize: none;
+  outline: none;
+  min-height: 40px;
+  max-height: 90px;
+  line-height: 1.4;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.nexus-input-field:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), 0 0 12px rgba(242, 13, 32, 0.15);
+}
+
+.nexus-input-field::placeholder {
+  color: var(--dim);
+  font-size: 0.8rem;
+}
+
+.nexus-input-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nexus-icon-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nexus-icon-btn:hover {
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.nexus-icon-btn.active-mic {
+  background: rgba(242, 13, 32, 0.15);
+  border-color: var(--accent);
+  color: var(--accent);
+  animation: pulse-dot 1s infinite alternate;
+}
+
+.nexus-send-btn {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: #ffffff;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nexus-send-btn:hover:not(:disabled) {
+  background: var(--accent-light);
+  box-shadow: 0 0 14px var(--accent-glow);
+  transform: translateY(-1px);
+}
+
+.nexus-send-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .nexus-launcher {
+    bottom: 18px;
+    right: 18px;
+    padding: 9px 13px 9px 12px;
+  }
+
+  .nexus-panel {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 100vw;
+    height: 92vh;
+    max-height: 92vh;
+    border-radius: 18px 18px 0 0;
+    border-bottom: none;
+  }
+
+  .nexus-panel.minimized {
+    height: 64px;
+    border-radius: 12px 12px 0 0;
+  }
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .nexus-launcher-glow,
+  .nexus-online-dot,
+  .nexus-dot {
+    animation: none !important;
+  }
+
+  .nexus-panel {
+    animation: none !important;
+  }
+
+  .nexus-launcher,
+  .nexus-action-btn,
+  .nexus-send-btn {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
