@@ -1,15 +1,15 @@
 <div align="center">
-  <img src="./assets/tejas-cyber-banner.png" width="100%" alt="Tejas Bargat - Developer & Engineering Student" />
+  <img src="./assets/tejas-cyber-banner.png" width="100%" alt="Tejas Bargat - Cyber Engineering Banner" />
 
   <br/><br/>
 
   <a href="https://github.com/tejasbargat16-ux">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=3000&pause=1000&color=00D2FF&center=true&vCenter=true&width=650&lines=%E2%96%B6+Tejas+Bargat+%7C+2nd-Year+ECE+%2B+CSE+Minor;%E2%9A%A1+Building+Embedded+Systems+%2B+IoT+%2B+AI;%F0%9F%93%B1+Developing+on+Android+via+Termux;%F0%9F%A4%96+Powered+by+NEXUS+AI+%26+React+19;%F0%9F%8E%AF+GATE+EC+2028+Aspirant" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2800&pause=900&color=00D2FF&center=true&vCenter=true&width=680&lines=%E2%96%B6+Tejas+Bargat+%7C+2nd-Year+B.Tech+ECE+%2B+CSE+Minor;%E2%9A%A1+Building+Embedded+Systems+%2B+IoT+Hardware;%F0%9F%93%B1+Mobile-First+Engineering+via+Termux+%2B+Android;%F0%9F%A4%96+Powered+by+NEXUS+AI+Dual-Engine+Architecture;%F0%9F%94%A5+Daily+Public+Coding+%7C+Day+13%2B+Python+Streak;%F0%9F%8E%AF+Target%3A+GATE+EC+2028+%7C+Open+for+Internships" alt="Typing SVG" />
   </a>
 
   <br/><br/>
 
-  <a href="https://tejasbargat16-ux.github.io/tejasbargat16-ux/">
+  <a href="https://tejasbargat16-ux.github.io/tejasbargat16-ux/portfolio/">
     <img src="https://img.shields.io/badge/▶%20Interactive-Portfolio%202.0-00d2ff?style=for-the-badge&logoColor=black&labelColor=0d1117" alt="Interactive Portfolio 2.0" />
   </a>
   <a href="https://tejasbargat16-ux.github.io/tejasbargat16-ux/portfolio/">
@@ -40,12 +40,18 @@
 
 ### 🚀 Featured Projects
 
+<div align="center">
+  <img src="./assets/portfolio-telemetry.svg" width="100%" alt="Animated Portfolio Telemetry" />
+</div>
+
+<br/>
+
 | Project | What it does | Tech | Status | Link |
 | :--- | :--- | :--- | :--- | :--- |
 | **Nexus AI** | Mobile-first personal AI assistant concept exploring conversational interaction, memory architecture, web search integration, and modular plugins. | `Python`, `AI APIs`, `Termux`, `FastAPI`, `SQLite` | `Building` | [Repo](https://github.com/tejasbargat16-ux/Nexus-AIOS) |
 | **Dual Water Tank Monitoring System** | Two-tank water monitoring and automatic motor control system with sensor-based level detection, visual RGB status indicators, and audible buzzer alerts with overflow protection. | `Arduino UNO`, `ESP32`, `Sensors`, `Embedded C`, `Relay Control` | `Prototype` | [Repo](https://github.com/tejasbargat16-ux/water-tank-auto-controller) |
 | **Solar Tracking System** | 8051 microcontroller-based solar tracking concept utilizing light-dependent resistor (LDR) differential sensing and motor-driver control logic to follow peak sunlight. | `8051 MCU`, `LDR Sensors`, `Stepper Motor`, `Embedded C`, `Automation` | `Prototype` | [Repo](https://github.com/tejasbargat16-ux) |
-| **Tejas 2.0 Portfolio** | Responsive personal engineering portfolio showcasing skills, hardware builds, AI experiments, public learning streaks, and architectural design language. | `React 19`, `Vite`, `JavaScript`, `Modern CSS`, `GitHub Pages` | `Deployed` | [Demo](https://tejasbargat16-ux.github.io/tejasbargat16-ux/) · [Repo](https://github.com/tejasbargat16-ux/Tejas-2.0-Portfolio) |
+| **Tejas 2.0 Portfolio** | Responsive personal engineering portfolio showcasing skills, hardware builds, AI experiments, public learning streaks, and architectural design language. | `React 19`, `Vite`, `JavaScript`, `Modern CSS`, `GitHub Pages` | `Deployed` | [Demo](https://tejasbargat16-ux.github.io/tejasbargat16-ux/portfolio/) · [Repo](https://github.com/tejasbargat16-ux/Tejas-2.0-Portfolio) |
 | **Programming Learning Journey** | Disciplined day-by-day public learning journey covering Python, Java, JavaScript, and C fundamentals, LeetCode problem solving, and practical micro-builds committed to GitHub. | `Python`, `Java`, `JavaScript`, `C`, `Termux`, `Git` | `Active learning` | [Repo](https://github.com/tejasbargat16-ux/Python-Learning-Journey) |
 | **CampusCare AI** | AI-powered campus complaint management platform combining Flutter mobile frontend with FastAPI backend, featuring role-based access, issue tracking, image uploads, priority analysis, and admin dashboards. | `Flutter`, `FastAPI`, `Python`, `AI Priority Analysis`, `REST APIs` | `Building` | [Repo](https://github.com/tejasbargat16-ux/campuscareai_edition) |
 
@@ -69,15 +75,13 @@
 
 <br/>
 
-### ⚡ Animated Portfolio 2.0 & NEXUS AI
+### ⚡ Portfolio & NEXUS AI
 
-The repository is natively powered by the **Tejas 2.0 React 19 + Vite** cinematic application with rich animation systems:
-
-- 🌀 **Cinematic Preloader & Reveal**: Features animated progress meters, dynamic hero typography reveal, and smooth scroll animations with `@media (prefers-reduced-motion)` safety fallbacks.
-- 📡 **Atmospheric Scanline Effects**: Subtle CSS-driven scanning lines and ambient drifting glow reflecting embedded hardware telemetry.
-- 🤖 **Embedded NEXUS AI Dual Engine**: Conversational assistant operating client-side with zero latency on GitHub Pages (grounded in verified background facts) with optional Gemini/Groq/OpenAI backend.
-- 🎛️ **Reactive 36-Skill Taxonomy**: Filterable domain-level skill selector with dynamic counters and fluid state transitions.
-- 🌐 **Live Web Application**: Stream the interactive web experience directly at [tejasbargat16-ux.github.io/tejasbargat16-ux/](https://tejasbargat16-ux.github.io/tejasbargat16-ux/).
+- **React 19 + Vite Showcase**: A responsive web portfolio built with React 19 and Vite 8, featuring dark cinematic styling, an interactive 36-skill taxonomy, authentic project telemetry, and mobile-first design.
+- **Embedded NEXUS AI Assistant**: Integrated natively into the portfolio with a dual-engine architecture to serve as a conversational engineering representative.
+- **Client-Side Local Knowledge Engine**: Operates client-side on GitHub Pages with zero latency and no external API keys required, grounded strictly in verified academic, project, and skill data.
+- **Optional Full-Stack LLM Backend**: Features automated rate limiting with graceful failover to local mode when connected to Google Gemini, Groq, or OpenAI via Node/Express or serverless endpoints.
+- **Live Implementation**: Available online at [tejasbargat16-ux.github.io/tejasbargat16-ux/portfolio/](https://tejasbargat16-ux.github.io/tejasbargat16-ux/portfolio/).
 
 <br/>
 

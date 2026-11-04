@@ -39,7 +39,6 @@ jobs:
           npm run build
           mkdir -p ../site/portfolio
           cp -r dist/. ../site/portfolio/
-          cp -r dist/. ../site/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

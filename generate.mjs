@@ -20,6 +20,7 @@ console.log("🎬 [TEJASFLIX] Starting asset build & generation pipeline...");
 // Verify essential assets
 const requiredAssets = [
   "assets/tejas-cyber-banner.png",
+  "assets/portfolio-telemetry.svg",
 ];
 
 let missing = 0;
